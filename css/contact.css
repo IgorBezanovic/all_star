@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.contact {
+  background: url(../images/contact.jpg) 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 108px 60px 60px 60px;
+}
+.contact .contact_text, .contact .contact_form {
+  border-radius: 10px;
+  padding: 0 40px;
+  width: 33.5em;
+}
+.contact .contact_text {
+  align-self: flex-start;
+}
+.contact .contact_text img {
+  width: 100%;
+  margin-top: -2em;
+}
+.contact .contact_text h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.contact .contact_text p {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+.contact .contact_text p a {
+  text-decoration: none;
+  color: black;
+}
+.contact .contact_text p a:hover {
+  color: #f5b461;
+}
+.contact .contact_text p .about_us {
+  text-align: center;
+  align-self: center;
+}
+.contact .contact_form {
+  background-color: rgba(182, 182, 182, 0.582);
+}
+.contact .contact_form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.contact .contact_form form h2, .contact .contact_form form input, .contact .contact_form form textarea {
+  width: 100%;
+  margin: 0.5em 0;
+  border: none;
+  border-radius: 5px;
+}
+.contact .contact_form form h2 {
+  text-align: center;
+}
+.contact .contact_form form input {
+  height: 2em;
+  padding: 5px;
+}
+.contact .contact_form form textarea {
+  padding: 5px;
+}
+.contact .contact_form form .submit_btn {
+  background-image: linear-gradient(to right, #afafaf, rgba(86, 119, 121, 0.582));
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1191px) {
+  .contact {
+    justify-content: center;
+  }
+  .contact .contact_text {
+    margin-top: -1.5em;
+  }
+  .contact .contact_text .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact_form {
+    margin-top: 10em;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

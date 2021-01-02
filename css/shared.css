@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 0 60px 0 60px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 0 40px 0 40px;
+  background-color: #9ad3bc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: fixed;
+  top: 0;
+  left: 60px;
+  right: 60px;
+  z-index: 1;
+  transition: 0.5s;
+}
+header nav .logo {
+  height: 3em;
+  width: 3em;
+}
+header nav .logo img {
+  height: 100%;
+}
+header nav .links {
+  text-align: center;
+}
+header nav .links ul {
+  text-decoration: none;
+  width: 25em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav .links ul li {
+  list-style: none;
+  display: inline-block;
+  font-weight: bold;
+}
+header nav .links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px gray;
+}
+header nav .links ul li a:hover {
+  color: #f5b461;
+}
+header nav .burger_menu {
+  display: none;
+}
+
+footer {
+  height: 30em;
+  padding: 0 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ad3bc;
+}
+footer .footer_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 4em;
+}
+footer .footer_text .club {
+  width: 20em;
+}
+footer .footer_text .club img {
+  height: 8em;
+}
+footer .footer_text .club .txt {
+  margin-left: 1em;
+  color: #ffffff;
+}
+footer .footer_text .club .txt h3 {
+  margin-bottom: 1em;
+}
+footer .footer_text .club .txt p {
+  margin-top: 0.3em;
+}
+footer .footer_text .club .txt p a {
+  color: #ffffff;
+}
+footer .footer_text .club .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 10em;
+  margin-top: 1.5em;
+}
+footer .footer_text .club .social .social_bkg {
+  background-color: #f5b461;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_text .club .social .social_bkg img {
+  height: auto;
+}
+footer .footer_text .footer_contact .footer_links {
+  margin-top: 2em;
+}
+footer .footer_text .footer_contact .footer_links li {
+  list-style: none;
+  margin-top: 0.5em;
+}
+footer .footer_text .footer_contact .footer_links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3em;
+}
+footer .footer_text .google_maps {
+  height: 300px;
+}
+footer .footer_text .google_maps iframe {
+  border-radius: 1em;
+}
+footer .copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  background-color: #f5b461;
+}
+footer .copyright .left_footer {
+  padding-left: 40px;
+  width: 13em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copyright .left_footer p {
+  color: #ffffff;
+}
+footer .copyright .right_footer {
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+footer .copyright .right_footer p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1191px) {
+  footer {
+    height: 54em;
+  }
+  footer .footer_text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    margin-top: 3em;
+    padding: 40px;
+  }
+  footer .footer_text .footer_contact {
+    position: relative;
+    top: -18em;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  footer .footer_text .footer_contact .footer_links {
+    text-align: right;
+    margin-top: 0;
+  }
+  footer .footer_text .google_maps {
+    position: relative;
+    top: -6em;
+    width: 100%;
+  }
+  footer .footer_text .google_maps iframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    padding: 0 0 0 0;
+  }
+  header nav {
+    left: 0px;
+    right: 0px;
+    padding: 0 10px 0 10px;
+  }
+  header nav .links {
+    display: none;
+  }
+  header nav .links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header nav .links ul li {
+    margin-top: 2em;
+  }
+  header nav .links ul li:nth-child(1) {
+    margin-top: 3em;
+  }
+  header nav .links ul li:nth-child(5) {
+    margin-bottom: 2em;
+  }
+  header nav .logo {
+    align-self: start;
+  }
+  header nav .burger_menu {
+    display: flex;
+    align-self: start;
+    margin-top: 1em;
+    width: 3em;
+    cursor: pointer;
+  }
+
+  footer .footer_text {
+    margin-top: -1em;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer_text .club {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer_text .club .All_Star {
+    margin-left: 1.5em;
+  }
+  footer .footer_text .club .txt {
+    text-align: center;
+  }
+  footer .footer_text .footer_links {
+    display: none;
+  }
+  footer .footer_text .google_maps {
+    position: static;
+    margin-top: 2em;
+  }
+}
+
+/*# sourceMappingURL=shared.css.map */
