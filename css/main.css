@@ -10,11 +10,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background: url(../images/grass_vol3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 header {
   height: 50em;
-  background: linear-gradient(to top, rgba(65, 65, 65, 0.6) 10%, transparent), url(../images/weights.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 header .title {
   width: 100%;
@@ -25,15 +27,14 @@ header .title {
   flex-direction: column;
 }
 header .title img {
-  height: 25em;
-  margin-right: 35em;
+  height: 23em;
   transform: 0.5s;
 }
 header .title h1 {
   color: #ffffff;
   font-family: "Abril Fatface", cursive;
-  margin-left: 10em;
-  font-size: 4em;
+  margin-top: 1.5em;
+  font-size: 3em;
   font-family: "Dancing Script", cursive;
   transform: 0.5s;
 }
@@ -44,8 +45,6 @@ header .title h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 60em, 100% 0);
-  clip-path: polygon(0 0, 0 100%, 100% 60em, 100% 0);
 }
 .we .programs {
   padding: 4em;
@@ -57,12 +56,13 @@ header .title h1 {
 .we .programs .box {
   height: 20em;
   width: 15em;
+  background-color: #ffffff;
   box-shadow: 0px 10px 10px #b8b8b8;
   border-radius: 10px;
   margin: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .we .programs .box:hover {
@@ -71,6 +71,7 @@ header .title h1 {
 }
 .we .programs .box h2 {
   text-align: center;
+  margin-top: 3em;
 }
 .we .programs .box h2 a {
   text-decoration: none;
@@ -78,17 +79,36 @@ header .title h1 {
 }
 .we .programs .box p {
   margin-top: 1em;
+  text-align: center;
+  width: 12em;
+}
+
+.we .reserve {
+  background-color: rgba(82, 161, 167, 0.575);
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.we .reserve p {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+}
+.we .reserve p a {
+  color: #ffffff;
 }
 
 .we .container {
-  background-color: green;
   border-radius: 10px;
   background-color: rgba(182, 182, 182, 0.582);
   height: 35em;
   width: 100%;
   top: 60px;
   left: calc(50% - 300px);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -144,23 +164,16 @@ header .title h1 {
   transition: 0.4s ease-out;
 }
 
-@media screen and (max-width: 1191px) {
-  header .title img {
-    margin-right: 0;
-  }
-  header .title h1 {
-    margin-top: 1.5em;
-    margin-left: 0;
-  }
+.sponsors {
+  display: none;
 }
+
 @media screen and (max-width: 700px) {
   header .title img {
-    height: 20em;
-    margin-right: 0;
+    height: 40%;
   }
   header .title h1 {
     margin-top: 1.5em;
-    margin-left: 0;
     font-size: 2em;
   }
 
