@@ -11,12 +11,12 @@
 }
 
 body {
-  background: url(../images/grass_vol3.jpg) no-repeat center center fixed;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.342) 5%, transparent), url(../images/grass_vol3.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 header {
-  height: 50em;
+  height: 45em;
 }
 header .title {
   width: 100%;
@@ -53,10 +53,30 @@ header .title h1 {
   align-items: center;
   flex-wrap: wrap;
 }
+.we .programs .box1 {
+  background: url(../images/Couple.webp) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.we .programs .box2 {
+  background: url(../images/kids.jpg) right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.we .programs .box3 {
+  background: url(../images/family.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.we .programs .box4 {
+  background: url(../images/athlete.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .we .programs .box {
   height: 20em;
   width: 15em;
-  background-color: #ffffff;
+  background-color: #ffffff5e;
   box-shadow: 0px 10px 10px #b8b8b8;
   border-radius: 10px;
   margin: 1em;
@@ -71,7 +91,11 @@ header .title h1 {
 }
 .we .programs .box h2 {
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
+  background-color: #ffffffb0;
+  border-radius: 1em;
+  padding: 1em 0;
+  width: 100%;
 }
 .we .programs .box h2 a {
   text-decoration: none;
@@ -81,9 +105,13 @@ header .title h1 {
   margin-top: 1em;
   text-align: center;
   width: 12em;
+  background-color: #ffffffb0;
+  border-radius: 1em;
+  padding: 1em 10px;
+  width: 100%;
 }
 
-.we .reserve {
+.we .reserve, .we .message, .we .why_us {
   background-color: rgba(82, 161, 167, 0.575);
   width: 100%;
   height: auto;
@@ -92,13 +120,23 @@ header .title h1 {
   justify-content: center;
   align-items: center;
 }
-.we .reserve p {
+.we .reserve p, .we .reserve h2, .we .message p, .we .message h2, .we .why_us p, .we .why_us h2 {
   font-size: 1.5em;
   text-align: center;
   line-height: 1.5em;
 }
-.we .reserve p a {
+.we .reserve p span, .we .reserve h2 span, .we .message p span, .we .message h2 span, .we .why_us p span, .we .why_us h2 span {
+  color: #a70000;
+}
+.we .reserve p a, .we .reserve h2 a, .we .message p a, .we .message h2 a, .we .why_us p a, .we .why_us h2 a {
   color: #ffffff;
+}
+.we .why_us {
+  margin-top: 2em;
+  width: 60%;
+}
+.we .why_us span {
+  color: #a70000;
 }
 
 .we .container {
