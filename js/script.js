@@ -1,18 +1,18 @@
-let header = document.querySelector('#nav_track');
-let navOpen = 0;
-let prevScrollpos = window.pageYOffset;
+// let header = document.querySelector('#nav_track');
+// let navOpen = 0;
+// let prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (navOpen == 0) {
-    if (prevScrollpos > currentScrollPos) {
-      header.style.top = '0px';
-    } else {
-      header.style.top = '-100px';
-    }
-    prevScrollpos = currentScrollPos;
-  }
-};
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (navOpen == 0) {
+//     if (prevScrollpos > currentScrollPos) {
+//       header.style.top = '0px';
+//     } else {
+//       header.style.top = '-100px';
+//     }
+//     prevScrollpos = currentScrollPos;
+//   }
+// };
 
 let loricaBtn = document.querySelector('#button');
 let loticraTxt = document.getElementById('links')

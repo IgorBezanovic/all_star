@@ -22,3 +22,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin hover{
+    &:hover{
+        color: $hover_blue;
+    }
+}

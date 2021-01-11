@@ -10,28 +10,23 @@
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  padding: 0 60px 0 60px;
-}
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
+  height: 4.5em;
   padding: 0 40px 0 40px;
-  background-color: #9ad3bc;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-color: #123044;
   position: fixed;
   top: 0;
-  left: 60px;
-  right: 60px;
-  z-index: 1;
+  left: 0;
+  right: 0;
   transition: 0.5s;
 }
 header nav .logo {
-  height: 3em;
-  width: 3em;
+  height: 4.5em;
+  background-color: #d3e8f8;
+  border-radius: 5px;
 }
 header nav .logo img {
   height: 100%;
@@ -50,14 +45,14 @@ header nav .links ul li {
   list-style: none;
   display: inline-block;
   font-weight: bold;
+  text-transform: uppercase;
 }
 header nav .links ul li a {
   text-decoration: none;
   color: #ffffff;
-  text-shadow: 2px 2px gray;
 }
 header nav .links ul li a:hover {
-  color: #f5b461;
+  color: #3b9ada;
 }
 header nav .burger_menu {
   display: none;
@@ -70,7 +65,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9ad3bc;
+  background-color: #123044;
 }
 footer .footer_text {
   display: flex;
@@ -98,6 +93,9 @@ footer .footer_text .club .txt p {
 footer .footer_text .club .txt p a {
   color: #ffffff;
 }
+footer .footer_text .club .txt p a:hover {
+  color: #3b9ada;
+}
 footer .footer_text .club .social {
   display: flex;
   flex-direction: row;
@@ -106,7 +104,7 @@ footer .footer_text .club .social {
   margin-top: 1.5em;
 }
 footer .footer_text .club .social .social_bkg {
-  background-color: #f5b461;
+  background-color: #469fda;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -129,6 +127,9 @@ footer .footer_text .footer_contact .footer_links li a {
   color: #ffffff;
   font-size: 1.3em;
 }
+footer .footer_text .footer_contact .footer_links li a:hover {
+  color: #3b9ada;
+}
 footer .footer_text .google_maps {
   height: 300px;
 }
@@ -143,7 +144,7 @@ footer .copyright {
   display: flex;
   justify-content: space-between;
   height: 4em;
-  background-color: #f5b461;
+  background-color: #469fda;
 }
 footer .copyright .left_footer {
   padding-left: 40px;
@@ -199,9 +200,6 @@ footer .copyright .right_footer p a {
   }
 }
 @media screen and (max-width: 700px) {
-  header {
-    padding: 0 0 0 0;
-  }
   header nav {
     left: 0px;
     right: 0px;

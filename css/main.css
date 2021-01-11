@@ -26,14 +26,9 @@ header .title {
   align-items: center;
   flex-direction: column;
 }
-header .title img {
-  height: 23em;
-  transform: 0.5s;
-}
 header .title h1 {
   color: #ffffff;
   font-family: "Abril Fatface", cursive;
-  margin-top: 1.5em;
   font-size: 3em;
   font-family: "Dancing Script", cursive;
   transform: 0.5s;
@@ -73,17 +68,23 @@ header .title h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.we .programs a {
+  text-decoration: none;
+  color: #123044;
+}
 .we .programs .box {
-  height: 20em;
-  width: 15em;
-  background-color: #ffffff5e;
-  box-shadow: 0px 10px 10px #b8b8b8;
+  height: 25em;
+  width: 20em;
+  border: 1.5px solid #00eeff;
   border-radius: 10px;
-  margin: 1em;
+  margin: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+.we .programs .box:hover {
+  color: #3b9ada;
 }
 .we .programs .box:hover {
   transform: scale(1.2);
@@ -97,10 +98,6 @@ header .title h1 {
   padding: 1em 0;
   width: 100%;
 }
-.we .programs .box h2 a {
-  text-decoration: none;
-  color: #f5b461;
-}
 .we .programs .box p {
   margin-top: 1em;
   text-align: center;
@@ -111,32 +108,35 @@ header .title h1 {
   width: 100%;
 }
 
-.we .reserve, .we .message, .we .why_us {
-  background-color: rgba(82, 161, 167, 0.575);
+.we .reserve, .we .message {
+  background-color: #469fda;
   width: 100%;
   height: auto;
-  border-radius: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3em;
+  height: 3em;
 }
-.we .reserve p, .we .reserve h2, .we .message p, .we .message h2, .we .why_us p, .we .why_us h2 {
+.we .reserve p, .we .reserve h2, .we .message p, .we .message h2 {
   font-size: 1.5em;
   text-align: center;
   line-height: 1.5em;
 }
-.we .reserve p span, .we .reserve h2 span, .we .message p span, .we .message h2 span, .we .why_us p span, .we .why_us h2 span {
-  color: #a70000;
-}
-.we .reserve p a, .we .reserve h2 a, .we .message p a, .we .message h2 a, .we .why_us p a, .we .why_us h2 a {
+.we .reserve p a, .we .reserve h2 a, .we .message p a, .we .message h2 a {
   color: #ffffff;
+  text-decoration: none;
 }
-.we .why_us {
-  margin-top: 2em;
-  width: 60%;
+.we .reserve p a:hover, .we .reserve h2 a:hover, .we .message p a:hover, .we .message h2 a:hover {
+  color: #123044;
 }
-.we .why_us span {
-  color: #a70000;
+.we .reserve strong, .we .message strong {
+  background-color: #123044;
+  border-radius: 5px;
+  padding: 5px;
+}
+.we .reserve strong:hover, .we .message strong:hover {
+  color: #3b9ada;
 }
 
 .we .container {

@@ -1,5 +1,5 @@
-@import 'mixinsigorica';
-@import 'varsigorica';
+@import 'mixinsIgorica';
+@import 'varsIgorica';
 
 @include main;
 *{
@@ -7,25 +7,22 @@
 }
 
 header{
-    padding: 0 60px 0 60px;
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: auto;
+        height: 4.5em;
         padding: 0 40px 0 40px;
-        background-color: $light_green;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        background-color: $dark_blue;
         position: fixed;
         top: 0;
-        left: 60px;
-        right: 60px;
-        z-index: 1;
+        left: 0;
+        right: 0;
         transition: 0.5s;
         .logo{
-            height: 3em;
-            width: 3em;
+            height: 4.5em;
+            background-color: rgb(211, 232, 248);
+            border-radius:5px ;
             img{
                 height: 100%;
             }
@@ -42,13 +39,11 @@ header{
                     list-style: none;
                     display: inline-block;
                     font-weight: bold;
+                    text-transform: uppercase;
                     a{
                         text-decoration: none;
                         color: #ffffff;
-                        text-shadow: 2px 2px gray;
-                        &:hover{
-                            color: $orange;
-                        }
+                        @include hover;
                     }
                 }
             }
@@ -65,7 +60,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $light_green;
+    background-color: $dark_blue;
     .footer_text{
         display: flex;
         justify-content: space-between;
@@ -87,6 +82,7 @@ footer{
                     margin-top: 0.3em;
                     a{
                         color: #ffffff;
+                        @include hover;
                     }
                 }
             }
@@ -97,7 +93,7 @@ footer{
                 width: 10em;
                 margin-top: 1.5em;
                 .social_bkg{
-                    background-color: $orange;
+                    background-color: $blue;
                     border-radius: 50%;
                     height: 40px;
                     width: 40px;
@@ -120,7 +116,7 @@ footer{
                         text-decoration: none;
                         color: #ffffff;
                         font-size: 1.3em;
-                        
+                        @include hover;
                     }
                 }
             }
@@ -140,7 +136,7 @@ footer{
         display: flex;
         justify-content: space-between;
         height: 4em;
-        background-color: $orange;
+        background-color: $blue;
         .left_footer{
             padding-left: 40px;
             width: 13em;
@@ -200,7 +196,6 @@ footer{
 }
 @media screen and (max-width: 700px){
     header{
-        padding: 0 0 0 0;
         nav{
             left: 0px;
             right: 0px;
