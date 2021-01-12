@@ -5,34 +5,123 @@
 *{
     font-family: $text;
 }
-body{
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.342) 5%, transparent), url(../images/grass_vol3.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
+
 header{
     height: 45em;
-    .title{
-        width: 100%;
-        height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        h1{
-            color: #ffffff;
-            font-family: $h-txt;
-            font-size: 3em;
-            font-family: $moto;
-            transform: .5s;
+    .slideshow-container{
+        height: 40em;
+        max-width: 100%;
+        margin: auto;
+        .mySlides { 
+            display: none; 
+            position: relative;
+            margin-top: 4em;
+            .imgs { 
+                vertical-align: middle;
+                width: 100%;
+                height: 45em;
+            }
+            .content_slide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .prev, .next{
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: 1em;
+                    color: $dark_blue;
+                    font-size: 2em;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                    padding: 5px;
+                }
+                .prev {
+                    left: 0;
+                    text-align: right;
+                }
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+                .prev:hover, .next:hover {
+                    background-color: $dark_blue;
+                    color: $white;
+                }
+                .dots{
+                    position: absolute;
+                    top: 90%;
+                    text-align: center;
+                    .dot {
+                        cursor: pointer;
+                        height: 15px;
+                        width: 15px;
+                        margin: 0 2px;
+                        background-color: $hover_blue;
+                        border-radius: 50%;
+                        display: inline-block;
+                        transition: background-color 0.6s ease;
+                    }
+                    .active, .dot:hover {
+                        background-color: $dark_blue;
+                    }
+                }
+            }
+        }
+    }
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+}
+.description_slide{
+    position: absolute;
+    top: 35%;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .text{
+        color: $white;
+        font-size: 1.3em;
+    }
+    .btn{
+        margin-top: 2em;
+        padding: 1em;
+        width: 7em;
+        background-color: $dark_blue;
+        border-radius: 5px;
+        @include hover;
+        font-size: 16px;
+        &:hover{
+            background-color: $hover_btn;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
         }
     }
 }
 .we{
-    padding: 60px 60px;
+    padding: 0 0 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $background_clr;
     .programs{
         padding: 4em;
         display: flex;
@@ -103,30 +192,35 @@ header{
     .reserve, .message{   
         background-color: $blue;
         width: 100%;
-        height: auto;
+        padding: 20px 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 3em;
-        height: 3em;
         p, h2{
-            font-size: 1.5em;
+            font-size: 1.2em;
             text-align: center;
             line-height: 1.5em;
+            color: $white;
+            line-height: 2;
             a{
                 color: #ffffff;
                 text-decoration: none;
                 &:hover{
                     color: $dark_blue;
+                    font-weight: bold;
                 }
             }
         }
         strong{
             background-color: $dark_blue;
             border-radius: 5px;
-            padding: 5px;
+            padding: 12px;
             @include hover;
-
+            font-size: 16px;
+            &:hover{
+                background-color: $hover_btn;
+            }
         }
     }
 }   
@@ -198,17 +292,6 @@ header{
     display: none;
 }
 @media screen and (max-width: 700px){
-    header{
-        .title{
-            img{
-                height: 40%;
-            }
-            h1{
-                margin-top: 1.5em;
-                font-size: 2em;
-            }
-        }
-    }
     .we{
         justify-content: flex-start;
         .container {
@@ -230,5 +313,4 @@ header{
             }
         }
     }
-
 }

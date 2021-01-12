@@ -10,36 +10,134 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.342) 5%, transparent), url(../images/grass_vol3.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-
 header {
   height: 45em;
 }
-header .title {
+header .slideshow-container {
+  height: 40em;
+  max-width: 100%;
+  margin: auto;
+}
+header .slideshow-container .mySlides {
+  display: none;
+  position: relative;
+  margin-top: 4em;
+}
+header .slideshow-container .mySlides .imgs {
+  vertical-align: middle;
   width: 100%;
-  height: 80%;
+  height: 45em;
+}
+header .slideshow-container .mySlides .content_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .slideshow-container .mySlides .content_slide .prev, header .slideshow-container .mySlides .content_slide .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 1em;
+  color: #123044;
+  font-size: 2em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  padding: 5px;
+}
+header .slideshow-container .mySlides .content_slide .prev {
+  left: 0;
+  text-align: right;
+}
+header .slideshow-container .mySlides .content_slide .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+header .slideshow-container .mySlides .content_slide .prev:hover, header .slideshow-container .mySlides .content_slide .next:hover {
+  background-color: #123044;
+  color: #ffffff;
+}
+header .slideshow-container .mySlides .content_slide .dots {
+  position: absolute;
+  top: 90%;
+  text-align: center;
+}
+header .slideshow-container .mySlides .content_slide .dots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #3b9ada;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+header .slideshow-container .mySlides .content_slide .dots .active, header .slideshow-container .mySlides .content_slide .dots .dot:hover {
+  background-color: #123044;
+}
+header .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.description_slide {
+  position: absolute;
+  top: 35%;
+  width: 70%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-header .title h1 {
+.description_slide .text {
   color: #ffffff;
-  font-family: "Abril Fatface", cursive;
-  font-size: 3em;
-  font-family: "Dancing Script", cursive;
-  transform: 0.5s;
+  font-size: 1.3em;
+}
+.description_slide .btn {
+  margin-top: 2em;
+  padding: 1em;
+  width: 7em;
+  background-color: #123044;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.description_slide .btn:hover {
+  color: #3b9ada;
+}
+.description_slide .btn:hover {
+  background-color: #051f30;
+}
+.description_slide .btn a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .we {
-  padding: 60px 60px;
+  padding: 0 0 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #d1ebfc;
 }
 .we .programs {
   padding: 4em;
@@ -111,17 +209,18 @@ header .title h1 {
 .we .reserve, .we .message {
   background-color: #469fda;
   width: 100%;
-  height: auto;
+  padding: 20px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3em;
-  height: 3em;
 }
 .we .reserve p, .we .reserve h2, .we .message p, .we .message h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   line-height: 1.5em;
+  color: #ffffff;
+  line-height: 2;
 }
 .we .reserve p a, .we .reserve h2 a, .we .message p a, .we .message h2 a {
   color: #ffffff;
@@ -129,14 +228,19 @@ header .title h1 {
 }
 .we .reserve p a:hover, .we .reserve h2 a:hover, .we .message p a:hover, .we .message h2 a:hover {
   color: #123044;
+  font-weight: bold;
 }
 .we .reserve strong, .we .message strong {
   background-color: #123044;
   border-radius: 5px;
-  padding: 5px;
+  padding: 12px;
+  font-size: 16px;
 }
 .we .reserve strong:hover, .we .message strong:hover {
   color: #3b9ada;
+}
+.we .reserve strong:hover, .we .message strong:hover {
+  background-color: #051f30;
 }
 
 .we .container {
@@ -207,14 +311,6 @@ header .title h1 {
 }
 
 @media screen and (max-width: 700px) {
-  header .title img {
-    height: 40%;
-  }
-  header .title h1 {
-    margin-top: 1.5em;
-    font-size: 2em;
-  }
-
   .we {
     justify-content: flex-start;
   }
