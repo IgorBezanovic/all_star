@@ -17,6 +17,7 @@ header .slideshow-container {
   height: 40em;
   max-width: 100%;
   margin: auto;
+  margin-top: 10em;
 }
 header .slideshow-container .mySlides {
   display: none;
@@ -137,7 +138,9 @@ header .fade {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d1ebfc;
+  background: #d1ebfc url(../images/New_Logo_White.png) repeat;
+  background-position: 10% 100%;
+  background-size: 6em;
 }
 .we .programs {
   padding: 4em;

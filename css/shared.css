@@ -10,12 +10,12 @@
   font-family: "Roboto", sans-serif;
 }
 
-header nav {
+header .nav_track {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  height: 4.5em;
-  padding: 0 40px 0 40px;
+  flex-direction: column;
+  height: 10em;
   background-color: #123044;
   position: fixed;
   top: 0;
@@ -24,38 +24,43 @@ header nav {
   transition: 0.5s;
   z-index: 1;
 }
-header nav .logo {
-  height: 4.5em;
+header .nav_track .logo {
+  height: 6em;
   background-color: #d3e8f8;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-header nav .logo img {
-  height: 100%;
+header .nav_track .logo img {
+  height: 6em;
+  transform: scale(1.2);
 }
-header nav .links {
+header .nav_track .links {
   text-align: center;
+  height: 4em;
 }
-header nav .links ul {
+header .nav_track .links ul {
   text-decoration: none;
   width: 25em;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header nav .links ul li {
+header .nav_track .links ul li {
   list-style: none;
   display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
 }
-header nav .links ul li a {
+header .nav_track .links ul li a {
   text-decoration: none;
   color: #ffffff;
 }
-header nav .links ul li a:hover {
+header .nav_track .links ul li a:hover {
   color: #3b9ada;
 }
-header nav .burger_menu {
+header .nav_track .burger_menu {
   display: none;
 }
 
@@ -201,35 +206,37 @@ footer .copyright .right_footer p a {
   }
 }
 @media screen and (max-width: 700px) {
-  header nav {
+  header .nav_track {
     left: 0px;
     right: 0px;
-    padding: 0 10px 0 10px;
+    height: 4em;
+    justify-content: center;
   }
-  header nav .links {
+  header .nav_track .logo {
     display: none;
   }
-  header nav .links ul {
+  header .nav_track .links {
+    display: none;
+  }
+  header .nav_track .links ul {
     width: 100%;
     flex-direction: column;
   }
-  header nav .links ul li {
+  header .nav_track .links ul li {
     margin-top: 2em;
   }
-  header nav .links ul li:nth-child(1) {
+  header .nav_track .links ul li:nth-child(1) {
     margin-top: 3em;
   }
-  header nav .links ul li:nth-child(5) {
+  header .nav_track .links ul li:nth-child(5) {
     margin-bottom: 2em;
   }
-  header nav .logo {
-    align-self: start;
-  }
-  header nav .burger_menu {
+  header .nav_track .burger_menu {
     display: flex;
-    align-self: start;
-    margin-top: 1em;
+    align-self: center;
+    justify-content: center;
     width: 3em;
+    margin-left: 80%;
     cursor: pointer;
   }
 

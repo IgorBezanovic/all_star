@@ -12,6 +12,7 @@ header{
         height: 40em;
         max-width: 100%;
         margin: auto;
+        margin-top: 10em;
         .mySlides { 
             display: none; 
             position: relative;
@@ -121,7 +122,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $background_clr;
+    background: $background_clr url(../images/New_Logo_White.png) repeat;
+    background-position: 10% 100%;
+    background-size: 6em;
     .programs{
         padding: 4em;
         display: flex;
