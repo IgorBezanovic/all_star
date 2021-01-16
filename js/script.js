@@ -1,3 +1,4 @@
+//caroseul
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,7 +28,7 @@ function showSlides(n) {
 
 
 
-
+//Burgder menu for mobile
 
 let loricaBtn = document.querySelector('#button');
 let loticraTxt = document.getElementById('links')

@@ -1,0 +1,132 @@
+@import 'mixinsIgorica';
+@import 'varsIgorica';
+
+@include main;
+*{
+    font-family: $text;
+}
+
+.about_us{
+    margin-top: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $white url(../images/New_Logo_White.png) repeat;
+    background-position: 10% 100%;
+    background-size: 6em;
+    .about_us_description{
+        padding:  60px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .about_us_text{
+            width: 45%;
+            .about_us_title{
+                text-align: center;
+            }
+            .about_us_desc_txt{
+                margin-top: 3em;
+                text-align: justify;
+            }
+        }
+        .about_us_image{
+            width: 45%;
+            align-self: center;
+            .about_us_img{
+                width: 100%;
+            }
+        }
+    }
+}
+.about_us_trainers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px;
+    .trainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc94;
+        border-radius: 1em;
+        padding: 2em;
+        .trainer_img{
+            height: 10em;
+            border-radius: 50%;
+        }
+        .trainer_message{
+            margin-left: 2em;
+        }
+    }
+}
+.about_us_education{
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 60px;
+    .education{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 3em;
+        a{
+            width: 12em;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1191px){
+
+}
+@media screen and (max-width: 700px){
+    .about_us{
+        margin-top: 4em;
+        .about_us_description{
+            align-items: center;
+            flex-direction: column;
+            .about_us_text{
+                width: 100%;
+            }
+            .about_us_image{
+                margin-top: 2em;
+                width: 100%;
+            }
+        }
+    }
+    .about_us_trainers{
+        align-items: center;
+        flex-direction: column;
+        .trainer{
+            align-items: center;
+            flex-direction: column; 
+            .trainer_message{
+                margin-top: 2em;
+                margin-left: 0;
+                text-align: center;
+            }
+            &:nth-child(2){
+                margin-top: 5em;
+            }
+        }
+    }
+    .about_us_education{
+        .education{
+            flex-direction: column;
+            justify-content: center;
+            a{
+                margin-top: 3em;
+                &:nth-child(1){
+                    margin-top: 0;
+                } 
+            }
+        }
+    }
+}
