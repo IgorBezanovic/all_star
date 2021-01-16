@@ -17,7 +17,7 @@ header .slideshow-container {
   height: 40em;
   max-width: 100%;
   margin: auto;
-  margin-top: 10em;
+  margin-top: 12em;
 }
 header .slideshow-container .mySlides {
   display: none;
@@ -138,7 +138,7 @@ header .fade {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #d1ebfc url(../images/New_Logo_White.png) repeat;
+  background: #ffffff url(../images/New_Logo_White.png) repeat;
   background-position: 10% 100%;
   background-size: 6em;
 }
@@ -234,16 +234,14 @@ header .fade {
   font-weight: bold;
 }
 .we .reserve strong, .we .message strong {
-  background-color: #123044;
+  background-color: #8b1d1d;
   border-radius: 5px;
   padding: 12px;
   font-size: 16px;
 }
 .we .reserve strong:hover, .we .message strong:hover {
-  color: #3b9ada;
-}
-.we .reserve strong:hover, .we .message strong:hover {
-  background-color: #051f30;
+  background-color: #631919;
+  color: #ffffff;
 }
 
 .we .container {

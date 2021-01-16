@@ -25,15 +25,15 @@ header .nav_track {
   z-index: 1;
 }
 header .nav_track .logo {
-  height: 6em;
-  background-color: #d3e8f8;
+  height: 8em;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 header .nav_track .logo img {
-  height: 6em;
+  height: 8em;
   transform: scale(1.2);
 }
 header .nav_track .links {
@@ -153,7 +153,7 @@ footer .copyright {
   display: flex;
   justify-content: space-between;
   height: 4em;
-  background-color: #469fda;
+  background-color: #ffffff;
 }
 footer .copyright .left_footer {
   padding-left: 40px;
@@ -162,19 +162,16 @@ footer .copyright .left_footer {
   justify-content: space-between;
   align-items: center;
 }
-footer .copyright .left_footer p {
-  color: #ffffff;
-}
 footer .copyright .right_footer {
   padding-right: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
+  color: #123044;
 }
 footer .copyright .right_footer p a {
   text-decoration: none;
-  color: #ffffff;
+  color: #123044;
 }
 
 @media screen and (max-width: 1191px) {

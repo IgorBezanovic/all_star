@@ -12,7 +12,7 @@ header{
         height: 40em;
         max-width: 100%;
         margin: auto;
-        margin-top: 10em;
+        margin-top: 12em;
         .mySlides { 
             display: none; 
             position: relative;
@@ -122,7 +122,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: $background_clr url(../images/New_Logo_White.png) repeat;
+    background: $white url(../images/New_Logo_White.png) repeat;
     background-position: 10% 100%;
     background-size: 6em;
     .programs{
@@ -216,13 +216,13 @@ header{
             }
         }
         strong{
-            background-color: $dark_blue;
+            background-color: rgb(139, 29, 29);
             border-radius: 5px;
             padding: 12px;
-            @include hover;
             font-size: 16px;
             &:hover{
-                background-color: $hover_btn;
+                background-color: rgb(99, 25, 25);
+                color: $white;
             }
         }
     }
