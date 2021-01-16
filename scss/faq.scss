@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     .faq_div{
-
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -21,27 +20,27 @@
             text-align: right;
         }
     }
-    .questions{
-        background-color: rgba(173, 216, 230, 0.425);
+}
+.questions{
+    background-color: rgba(173, 216, 230, 0.425);
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 2em;
+    .question{
+        background-color: peachpuff;
         border-radius: 10px;
-        padding: 1em;
-        margin-top: 2em;
-        .question{
-            background-color: peachpuff;
-            border-radius: 10px;
-            h4{
-                margin-top: 1em;
-                padding: 5px;
-            }
-            p{
-                padding: 1em 1.5em;
-                text-align: justify;
-            }
+        h4{
+            margin-top: 1em;
+            padding: 5px;
         }
-        .question:first-child{
-            h4{
-                margin-top: 0;
-            }
+        p{
+            padding: 1em 1.5em;
+            text-align: justify;
+        }
+    }
+    .question:first-child{
+        h4{
+            margin-top: 0;
         }
     }
 }

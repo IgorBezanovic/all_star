@@ -24,25 +24,26 @@
   width: 25em;
   text-align: right;
 }
-.faq .questions {
+
+.questions {
   background-color: rgba(173, 216, 230, 0.425);
   border-radius: 10px;
   padding: 1em;
   margin-top: 2em;
 }
-.faq .questions .question {
+.questions .question {
   background-color: peachpuff;
   border-radius: 10px;
 }
-.faq .questions .question h4 {
+.questions .question h4 {
   margin-top: 1em;
   padding: 5px;
 }
-.faq .questions .question p {
+.questions .question p {
   padding: 1em 1.5em;
   text-align: justify;
 }
-.faq .questions .question:first-child h4 {
+.questions .question:first-child h4 {
   margin-top: 0;
 }
 
