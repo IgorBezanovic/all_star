@@ -48,7 +48,7 @@ header .nav_track .links ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 25em;
+  width: 30em;
 }
 header .nav_track .links ul li {
   list-style: none;
@@ -235,7 +235,7 @@ footer .copyright .right_footer p a {
   header .nav_track .links ul li:nth-child(1) {
     margin-top: 2em;
   }
-  header .nav_track .links ul li:nth-child(5) {
+  header .nav_track .links ul li:nth-child(6) {
     margin-bottom: 2em;
   }
   header .nav_track .burger_menu {

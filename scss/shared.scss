@@ -43,7 +43,7 @@ header{
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                width: 25em;
+                width: 30em;
                 li{
                     list-style: none;
                     display: inline-block;
@@ -225,7 +225,7 @@ footer{
                         &:nth-child(1){
                             margin-top: 2em;
                         }
-                        &:nth-child(5){
+                        &:nth-child(6){
                             margin-bottom: 2em;
                         }
                     }
