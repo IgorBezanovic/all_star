@@ -295,6 +295,24 @@ header{
     display: none;
 }
 @media screen and (max-width: 700px){
+    header{
+        .slideshow-container{
+            margin-top: 4em;
+            .mySlides { 
+                .imgs { 
+                    height: 50em;
+                }
+            }
+        }
+        .description_slide{
+            top: 5%;
+        }
+    }
+    .we{
+        .reserve{
+            margin-top: 5em;  
+        }
+    }
     .we{
         justify-content: flex-start;
         .container {
@@ -313,6 +331,24 @@ header{
             }
             .card:hover ~ .card {
                 left: 0px;
+            }
+        }
+        .programs{
+            .box{
+                height: 25em;
+                width: 12em;
+                &:hover{
+                    transform: scale(0);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .we{
+        .programs{
+            .box{
+                margin: 1.5em 0;
             }
         }
     }

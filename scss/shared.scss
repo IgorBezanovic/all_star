@@ -12,7 +12,7 @@ header{
         justify-content: flex-end;
         align-items: center;
         flex-direction: column;
-        height: 10em;
+        height: auto;
         background-color: $dark_blue;
         position: fixed;
         top: 0;
@@ -35,12 +35,15 @@ header{
         .links{
             text-align: center;
             height: 4em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             ul{
                 text-decoration: none;
-                width: 25em;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                width: 25em;
                 li{
                     list-style: none;
                     display: inline-block;
@@ -202,9 +205,8 @@ footer{
 }
 @media screen and (max-width: 700px){
     header{
+        width: 100%;
         .nav_track{
-            left: 0px;
-            right: 0px;
             height: 4em;
             justify-content: center;
             .logo{
@@ -212,13 +214,19 @@ footer{
             }
             .links{
                 display: none;
+                width: 100%;
                 ul{
-                    width: 100%;
+                    margin-top: 3.9em;
+                    left: 0px;
+                    right: 0px;
                     flex-direction: column;
+                    align-self: flex-start;
+                    background-color: $dark_blue;
+                    width: 100%;
                     li{
                         margin-top: 2em;
                         &:nth-child(1){
-                            margin-top: 3em;
+                            margin-top: 2em;
                         }
                         &:nth-child(5){
                             margin-bottom: 2em;
@@ -231,7 +239,9 @@ footer{
                 align-self: center;
                 justify-content: center;
                 width: 3em;
-                margin-left: 80%;
+                position: absolute;
+                right: 2em;
+                top: 1.5em;
                 cursor: pointer;
             }
         }
@@ -260,6 +270,7 @@ footer{
             .google_maps{
                 position: static;
                 margin-top: 2em;
+                width: 15em;
             }
         }
     }

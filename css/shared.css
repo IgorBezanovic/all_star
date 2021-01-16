@@ -15,7 +15,7 @@ header .nav_track {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  height: 10em;
+  height: auto;
   background-color: #123044;
   position: fixed;
   top: 0;
@@ -39,13 +39,16 @@ header .nav_track .logo img {
 header .nav_track .links {
   text-align: center;
   height: 4em;
-}
-header .nav_track .links ul {
-  text-decoration: none;
-  width: 25em;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+header .nav_track .links ul {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25em;
 }
 header .nav_track .links ul li {
   list-style: none;
@@ -206,9 +209,10 @@ footer .copyright .right_footer p a {
   }
 }
 @media screen and (max-width: 700px) {
+  header {
+    width: 100%;
+  }
   header .nav_track {
-    left: 0px;
-    right: 0px;
     height: 4em;
     justify-content: center;
   }
@@ -217,16 +221,22 @@ footer .copyright .right_footer p a {
   }
   header .nav_track .links {
     display: none;
+    width: 100%;
   }
   header .nav_track .links ul {
-    width: 100%;
+    margin-top: 3.9em;
+    left: 0px;
+    right: 0px;
     flex-direction: column;
+    align-self: flex-start;
+    background-color: #123044;
+    width: 100%;
   }
   header .nav_track .links ul li {
     margin-top: 2em;
   }
   header .nav_track .links ul li:nth-child(1) {
-    margin-top: 3em;
+    margin-top: 2em;
   }
   header .nav_track .links ul li:nth-child(5) {
     margin-bottom: 2em;
@@ -236,7 +246,9 @@ footer .copyright .right_footer p a {
     align-self: center;
     justify-content: center;
     width: 3em;
-    margin-left: 80%;
+    position: absolute;
+    right: 2em;
+    top: 1.5em;
     cursor: pointer;
   }
 
@@ -264,6 +276,7 @@ footer .copyright .right_footer p a {
   footer .footer_text .google_maps {
     position: static;
     margin-top: 2em;
+    width: 15em;
   }
 }
 
