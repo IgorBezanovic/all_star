@@ -8,9 +8,7 @@
 
 .faq {
   padding: 100px 60px 60px 60px;
-  background: url(../images/lines.jpg) center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  margin-top: 12em;
 }
 .faq .faq_div {
   display: flex;
@@ -26,30 +24,34 @@
 }
 
 .questions {
-  background-color: rgba(173, 216, 230, 0.425);
-  border-radius: 10px;
+  background-color: rgba(189, 208, 221, 0.685);
+  border-radius: 1px;
   padding: 1em;
   margin-top: 2em;
 }
 .questions .question {
-  background-color: peachpuff;
-  border-radius: 10px;
-}
-.questions .question h4 {
-  margin-top: 1em;
-  padding: 5px;
+  background-color: rgba(148, 192, 221, 0.685);
+  border-radius: 1px;
+  padding: 1em;
+  margin-top: 1.5em;
 }
 .questions .question p {
   padding: 1em 1.5em;
-  text-align: justify;
 }
-.questions .question:first-child h4 {
-  margin-top: 0;
+
+.more_info {
+  background-color: #469fda;
+  width: 100%;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacting {
   text-align: center;
   margin-top: 3em;
+  line-height: 2em;
 }
 .contacting a {
   text-decoration: none;
@@ -57,7 +59,10 @@
 }
 .contacting a:hover {
   text-decoration: underline;
-  color: purple;
+  color: #ffffff;
+  background-color: #123044;
+  padding: 0.5em;
+  border-radius: 1px;
 }
 
 @media screen and (max-width: 700px) {

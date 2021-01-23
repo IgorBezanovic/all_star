@@ -16,9 +16,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #ffffff url(../images/New_Logo_White.png) repeat;
-  background-position: 10% 100%;
-  background-size: 6em;
 }
 .about_us .about_us_description {
   padding: 60px;
@@ -56,7 +53,7 @@
   align-items: center;
   justify-content: center;
   background-color: #cccccc94;
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding: 2em;
 }
 .about_us_trainers .trainer .trainer_img {

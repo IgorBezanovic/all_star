@@ -5,9 +5,7 @@
 
 .faq{
     padding: 100px 60px 60px 60px;
-    background: url(../images/lines.jpg) center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    margin-top: 12em;
     .faq_div{
         display: flex;
         justify-content: space-between;
@@ -22,38 +20,41 @@
     }
 }
 .questions{
-    background-color: rgba(173, 216, 230, 0.425);
-    border-radius: 10px;
+    background-color: rgba(189, 208, 221, 0.685);
+    border-radius: 1px;
     padding: 1em;
     margin-top: 2em;
     .question{
-        background-color: peachpuff;
-        border-radius: 10px;
-        h4{
-            margin-top: 1em;
-            padding: 5px;
-        }
+        background-color: rgba(148, 192, 221, 0.685);
+        border-radius: 1px;
+        padding: 1em;
+        margin-top: 1.5em;
         p{
             padding: 1em 1.5em;
-            text-align: justify;
-        }
-    }
-    .question:first-child{
-        h4{
-            margin-top: 0;
         }
     }
 }
-
+.more_info{
+    background-color: $blue;
+        width: 100%;
+        padding: 20px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 .contacting{
     text-align: center;
     margin-top: 3em;
+    line-height: 2em;
     a{
         text-decoration: none;
         color: #6b6a6a;
         &:hover{
             text-decoration: underline;
-            color: purple;
+            color: $white;
+            background-color: $dark_blue;
+            padding: 0.5em;
+            border-radius: 1px;
         }
     }
 }

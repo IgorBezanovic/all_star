@@ -11,9 +11,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: $white url(../images/New_Logo_White.png) repeat;
-    background-position: 10% 100%;
-    background-size: 6em;
     .about_us_description{
         padding:  60px;
         display: flex;
@@ -38,8 +35,6 @@
         }
     }
 }
-
-
 .about_us_trainers{
     display: flex;
     align-items: center;
@@ -51,7 +46,7 @@
         align-items: center;
         justify-content: center;
         background-color: #cccccc94;
-        border-radius: 1em;
+        border-radius: 0.5em;
         padding: 2em;
         .trainer_img{
             height: 10em;
@@ -62,6 +57,7 @@
         }
     }
 }
+
 .about_us_education{
     background-color: $blue;
     display: flex;

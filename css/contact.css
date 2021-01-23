@@ -11,9 +11,6 @@
 }
 
 .contact {
-  background: #ffffff url(../images/New_Logo_White.png) repeat;
-  background-position: 10% 100%;
-  background-size: 6em;
   display: flex;
   align-items: center;
   justify-content: space-between;
