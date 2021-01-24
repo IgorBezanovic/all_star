@@ -4,7 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 12em;
-    padding: 108px 60px 60px 60px;
+    padding: 110px 60px;
     .contact_text, .contact_form{
         border-radius: 10px;
         padding: 0 40px;
@@ -30,7 +30,7 @@
                     color: $hover_blue;
                 }
             }
-            .about_us{
+            .contact_text_about_us{
                 text-align: center;
                 align-self: center;
             }
