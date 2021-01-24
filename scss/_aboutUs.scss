@@ -1,10 +1,3 @@
-@import 'mixinsIgorica';
-@import 'varsIgorica';
-
-@include main;
-*{
-    font-family: $text;
-}
 .about_us{
     margin-top: 12em;
     display: flex;
@@ -57,7 +50,61 @@
         }
     }
 }
-
+.about_us_approch_full{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding:  60px 0;
+    .about_us_approch_title{
+        background-color: $blue;
+        width: 100%;
+        padding: 20px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+    .about_us_approch{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .about_us_approch_method{
+            width: 18em;
+            height: 23em;
+            border-radius: 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: 1em;
+            .about_us_approch_name{
+                margin: 1.5em 0;
+                height: 4em;
+                text-align: center;
+                color: $dark_blue;
+            }
+            .about_us_approch_desc{
+                text-align: center;
+                width: 14em;
+            }
+        }
+        .st{
+            background-color: rgba(189, 208, 221, 0.685);
+        }
+        .nd{
+            background-color: rgba(148, 192, 221, 0.685);
+        }
+        .rd{
+            background-color: rgba(109, 172, 214, 0.685);
+        }
+        .th{
+            background-color: rgba(59, 151, 212, 0.685);
+        }
+    }
+}
 .about_us_education{
     background-color: $blue;
     display: flex;
@@ -79,9 +126,6 @@
             }
         }
     }
-}
-@media screen and (max-width: 1191px){
-
 }
 @media screen and (max-width: 700px){
     .about_us{
