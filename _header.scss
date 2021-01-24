@@ -1,0 +1,100 @@
+header{
+    .nav_track{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        background-color: $dark_blue;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: 0.5s;
+        z-index: 1;
+        .logo{
+            height: 8em;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            img{
+                height: 8em;
+                transform: scale(1.2);
+            }
+        }
+        .links{
+            text-align: center;
+            height: 4em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            ul{
+                text-decoration: none;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 30em;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    a{
+                        text-decoration: none;
+                        color: #ffffff;
+                        @include hover;
+                    }
+                }
+            }
+        }
+        .burger_menu{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    header{
+        width: 100%;
+        .nav_track{
+            height: 4em;
+            justify-content: center;
+            .logo{
+                display: none;
+            }
+            .links{
+                display: none;
+                width: 100%;
+                ul{
+                    margin-top: 3.9em;
+                    left: 0px;
+                    right: 0px;
+                    flex-direction: column;
+                    align-self: flex-start;
+                    background-color: $dark_blue;
+                    width: 100%;
+                    li{
+                        margin-top: 2em;
+                        &:nth-child(1){
+                            margin-top: 2em;
+                        }
+                        &:nth-child(6){
+                            margin-bottom: 2em;
+                        }
+                    }
+                }
+            }
+            .burger_menu{
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                width: 3em;
+                position: absolute;
+                right: 2em;
+                top: 1.5em;
+                cursor: pointer;
+            }
+        }
+    }
+}

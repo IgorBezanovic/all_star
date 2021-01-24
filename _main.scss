@@ -1,0 +1,48 @@
+.we{
+    padding: 0 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .reserve, .message{   
+        background-color: $blue;
+        width: 100%;
+        padding: 20px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+        p, h2{
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 1.5em;
+            color: $white;
+            line-height: 2;
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                &:hover{
+                    color: $dark_blue;
+                    font-weight: bold;
+                }
+            }
+        }
+        strong{
+            background-color: rgb(139, 29, 29);
+            border-radius: 5px;
+            padding: 12px;
+            font-size: 16px;
+            &:hover{
+                background-color: rgb(99, 25, 25);
+                color: $white;
+            }
+        }
+    }
+}   
+@media screen and (max-width: 700px){
+    .we{
+        .reserve{
+            margin-top: 5em;  
+        }
+    }
+}
