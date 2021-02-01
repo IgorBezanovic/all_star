@@ -22,7 +22,7 @@ header .nav_track {
   left: 0;
   right: 0;
   transition: 0.5s;
-  z-index: 1;
+  z-index: 2;
 }
 header .nav_track .logo {
   height: 8em;
@@ -886,6 +886,114 @@ footer .footer_text .club .social .social_bkg img {
     width: 100%;
   }
 }
+.pricelist {
+  margin-top: 5em;
+  padding: 8em 0em;
+}
+.pricelist .price {
+  text-align: center;
+}
+.pricelist .price .plan {
+  display: inline-block;
+  margin: 10px 1%;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.plan-inner {
+  background: #fff;
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 100%;
+  position: relative;
+}
+.plan-inner .entry-title {
+  background: #53CFE9;
+  height: 140px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.plan-inner .entry-title h3 {
+  background: #20BADA;
+  font-size: 20px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+.plan-inner .entry-title .price_logo {
+  position: absolute;
+  bottom: -1.5em;
+  background: #20BADA;
+  height: 6em;
+  width: 6em;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.entry-content {
+  color: #323232;
+}
+.entry-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.entry-content ul li {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px 0;
+}
+.entry-content ul li:last-child {
+  border: none;
+}
+
+.btn {
+  padding: 3em 0;
+  text-align: center;
+}
+.btn a {
+  cursor: pointer;
+  background: #123044;
+  color: #ffffff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.basic .entry-title {
+  background: #75DDD9;
+}
+
+.basic .entry-title h3, .basic .entry-title .price_logo {
+  background: #44CBC6;
+}
+
+.standard .entry-title {
+  background: #4484c1;
+}
+
+.standard .entry-title h3, .standard .entry-title .price_logo {
+  background: #3772aa;
+}
+
+.ultimite .entry-title {
+  background: #F75C70;
+}
+
+.ultimite .entry-title h3, .ultimite .entry-title .price_logo {
+  background: #DD4B5E;
+}
+
 body {
   background: #ffffff url(../images/New_Logo_White.png) repeat;
   background-position: 10% 100%;

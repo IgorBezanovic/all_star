@@ -1,0 +1,109 @@
+.pricelist{
+    margin-top: 5em;
+    padding: 8em 0em;
+    .price {
+        
+        text-align: center;
+        .plan {
+            display: inline-block;
+            margin: 10px 1%;
+        }
+    }
+} 
+.upper{
+    text-transform: uppercase;
+}
+.plan-inner {
+    background: #fff;
+    margin: 0 auto;
+    min-width: 280px;
+    max-width: 100%;
+    position:relative;
+    .entry-title {
+        background: #53CFE9;
+        height: 140px;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        h3 {
+            background: #20BADA;
+            font-size: 20px;
+            padding: 5px 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0;
+        }
+        .price_logo {
+            position: absolute;
+            bottom: -1.5em;
+            background: #20BADA;
+            height: 6em;
+            width: 6em;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            border-radius: 50%;
+            border: 5px solid #fff;
+        }
+    }
+}
+.entry-content {
+  color: #323232;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            border-bottom: 1px solid #E5E5E5;
+            padding: 10px 0;
+        }
+        li:last-child {
+            border: none;
+        }
+    }
+}
+.btn {
+  padding: 3em 0;
+  text-align: center;
+  a {
+      cursor: pointer;
+      background: $dark_blue;
+      color: $white;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+}
+
+.basic .entry-title {
+    background: #75DDD9;
+}  
+.basic .entry-title {
+    h3, .price_logo {
+        background: #44CBC6;
+    }
+}
+  
+.standard .entry-title {
+    background: #4484c1;
+}
+.standard .entry-title {
+    h3, .price_logo{
+        background: #3772aa;
+    }
+}
+      
+  
+.ultimite .entry-title {
+    background: #F75C70;
+}
+.ultimite .entry-title {
+    h3, .price_logo {
+        background: #DD4B5E;
+    }
+} 
+  
