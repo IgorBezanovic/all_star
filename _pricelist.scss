@@ -1,0 +1,115 @@
+.pricelist_txt{
+    padding: 8em 3em 3em 3em;
+    .pricelist_txt_h1{
+        text-align: center;
+    }
+}
+
+.pricelist{
+    padding: 8em 0em;
+    .price {
+        text-align: center;
+        .plan {
+            display: inline-block;
+            margin: 10px 1%;
+        }
+    }
+} 
+.plan-inner {
+    background: #fff;
+    margin: 0 auto;
+    min-width: 280px;
+    max-width: 100%;
+    position:relative;
+    .entry-title {
+        background: #49acbf;
+        height: 140px;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        h3 {
+            background: #449daf;
+            font-size: 20px;
+            padding: 5px 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0;
+        }
+        .price_logo {
+            position: absolute;
+            bottom: -1.5em;
+            background: #449daf;
+            height: 6em;
+            width: 6em;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            border-radius: 50%;
+            border: 5px solid #fff;
+        }
+    }
+}
+.entry-content {
+  color: #323232;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            border-bottom: 1px solid #E5E5E5;
+            padding: 10px 0;
+        }
+        li:last-child {
+            border: none;
+        }
+    }
+}
+.btn {
+  padding: 3em 0;
+  text-align: center;
+  a {
+      cursor: pointer;
+      background: $dark_blue;
+      color: $white;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+}
+
+.basic .entry-title {
+    background: #5ba63e;
+}  
+.basic .entry-title {
+    h3, .price_logo {
+        background: #4d8b34;
+    }
+}
+  
+.standard .entry-title {
+    background: #d24200;
+}
+.standard .entry-title {
+    h3, .price_logo{
+        background: #b43a01;
+    }
+}
+      
+  
+.ultimite .entry-title {
+    background: #b80000;
+}
+.ultimite .entry-title {
+    h3, .price_logo {
+        background: #960101;
+    }
+} 
+@media screen and (max-width: 700px){
+    .pricelist{
+        padding: 0em;
+    }
+}
