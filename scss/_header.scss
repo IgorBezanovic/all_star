@@ -5,7 +5,7 @@ header{
         align-items: center;
         flex-direction: column;
         height: auto;
-        background-color: $dark_blue;
+        background: radial-gradient($dark_blue, rgb(56, 79, 97));
         position: fixed;
         top: 0;
         left: 0;

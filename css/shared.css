@@ -16,7 +16,7 @@ header .nav_track {
   align-items: center;
   flex-direction: column;
   height: auto;
-  background-color: #123044;
+  background: radial-gradient(#123044, #384f61);
   position: fixed;
   top: 0;
   left: 0;
@@ -735,19 +735,37 @@ footer .footer_text .club .social .social_bkg img {
 }
 
 .questions {
-  background-color: rgba(189, 208, 221, 0.685);
   border-radius: 1px;
   padding: 1em;
   margin-top: 2em;
 }
-.questions .question {
+.questions .question_card {
   background-color: rgba(148, 192, 221, 0.685);
-  border-radius: 1px;
-  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 1.5em;
 }
-.questions .question p {
-  padding: 1em 1.5em;
+.questions .question_card .question_tittles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 2em;
+}
+.questions .question_card .question_tittles .question_tittle {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.questions .question_card .question_tittles .question_accordionArrow {
+  height: 0.7em;
+  width: 1.7em;
+  cursor: pointer;
+}
+.questions .question_card .question_description {
+  display: none;
+  padding: 1em 2em;
+}
+.questions .question_card:nth-child(1) {
+  margin-top: 0;
 }
 
 .more_info {
@@ -772,8 +790,8 @@ footer .footer_text .club .social .social_bkg img {
   text-decoration: underline;
   color: #ffffff;
   background-color: #123044;
-  padding: 0.5em;
-  border-radius: 1px;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
 }
 
 @media screen and (max-width: 700px) {
@@ -886,8 +904,14 @@ footer .footer_text .club .social .social_bkg img {
     width: 100%;
   }
 }
+.pricelist_txt {
+  padding: 8em 3em 3em 3em;
+}
+.pricelist_txt .pricelist_txt_h1 {
+  text-align: center;
+}
+
 .pricelist {
-  margin-top: 5em;
   padding: 8em 0em;
 }
 .pricelist .price {
@@ -898,10 +922,6 @@ footer .footer_text .club .social .social_bkg img {
   margin: 10px 1%;
 }
 
-.upper {
-  text-transform: uppercase;
-}
-
 .plan-inner {
   background: #fff;
   margin: 0 auto;
@@ -910,7 +930,7 @@ footer .footer_text .club .social .social_bkg img {
   position: relative;
 }
 .plan-inner .entry-title {
-  background: #53CFE9;
+  background: #49acbf;
   height: 140px;
   position: relative;
   text-align: center;
@@ -919,7 +939,7 @@ footer .footer_text .club .social .social_bkg img {
   border-radius: 5px;
 }
 .plan-inner .entry-title h3 {
-  background: #20BADA;
+  background: #449daf;
   font-size: 20px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -929,7 +949,7 @@ footer .footer_text .club .social .social_bkg img {
 .plan-inner .entry-title .price_logo {
   position: absolute;
   bottom: -1.5em;
-  background: #20BADA;
+  background: #449daf;
   height: 6em;
   width: 6em;
   margin: 0 auto;
@@ -971,29 +991,34 @@ footer .footer_text .club .social .social_bkg img {
 }
 
 .basic .entry-title {
-  background: #75DDD9;
+  background: #5ba63e;
 }
 
 .basic .entry-title h3, .basic .entry-title .price_logo {
-  background: #44CBC6;
+  background: #4d8b34;
 }
 
 .standard .entry-title {
-  background: #4484c1;
+  background: #d24200;
 }
 
 .standard .entry-title h3, .standard .entry-title .price_logo {
-  background: #3772aa;
+  background: #b43a01;
 }
 
 .ultimite .entry-title {
-  background: #F75C70;
+  background: #b80000;
 }
 
 .ultimite .entry-title h3, .ultimite .entry-title .price_logo {
-  background: #DD4B5E;
+  background: #960101;
 }
 
+@media screen and (max-width: 700px) {
+  .pricelist {
+    padding: 0em;
+  }
+}
 body {
   background: #ffffff url(../images/New_Logo_White.png) repeat;
   background-position: 10% 100%;

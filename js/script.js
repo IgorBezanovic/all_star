@@ -56,3 +56,27 @@ if (width.matches) {
 } else { 
     loticraTxt.style.display = "flex";
 }
+//FAQ
+let accordionArrow = document.querySelectorAll('.question_accordionArrow');
+let cards = document.querySelectorAll('.question_card');
+let accordionDescription = document.querySelectorAll('.question_description');
+let rightHeight= document.querySelectorAll('.rirhtt');
+let open = [0, 0, 0, 0, 0];
+
+cards.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    if (open[index] == 0) {
+      accordionDescription[index].style.display = 'block';
+      Object.assign(accordionArrow[index].style, {
+        transform: 'rotate(180deg)'
+      });
+      open[index] = 1;
+    } else {
+      accordionDescription[index].style.display = 'none';
+      Object.assign(accordionArrow[index].style, {
+        transform: 'rotate(0deg)'
+      });
+      open[index] = 0;
+    }
+  });
+});

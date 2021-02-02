@@ -1,8 +1,13 @@
+.pricelist_txt{
+    padding: 8em 3em 3em 3em;
+    .pricelist_txt_h1{
+        text-align: center;
+    }
+}
+
 .pricelist{
-    margin-top: 5em;
     padding: 8em 0em;
     .price {
-        
         text-align: center;
         .plan {
             display: inline-block;
@@ -10,9 +15,6 @@
         }
     }
 } 
-.upper{
-    text-transform: uppercase;
-}
 .plan-inner {
     background: #fff;
     margin: 0 auto;
@@ -20,7 +22,7 @@
     max-width: 100%;
     position:relative;
     .entry-title {
-        background: #53CFE9;
+        background: #49acbf;
         height: 140px;
         position: relative;
         text-align: center;
@@ -28,7 +30,7 @@
         margin-bottom: 30px;
         border-radius: 5px;
         h3 {
-            background: #20BADA;
+            background: #449daf;
             font-size: 20px;
             padding: 5px 0;
             text-transform: uppercase;
@@ -38,7 +40,7 @@
         .price_logo {
             position: absolute;
             bottom: -1.5em;
-            background: #20BADA;
+            background: #449daf;
             height: 6em;
             width: 6em;
             margin: 0 auto;
@@ -80,30 +82,34 @@
 }
 
 .basic .entry-title {
-    background: #75DDD9;
+    background: #5ba63e;
 }  
 .basic .entry-title {
     h3, .price_logo {
-        background: #44CBC6;
+        background: #4d8b34;
     }
 }
   
 .standard .entry-title {
-    background: #4484c1;
+    background: #d24200;
 }
 .standard .entry-title {
     h3, .price_logo{
-        background: #3772aa;
+        background: #b43a01;
     }
 }
       
   
 .ultimite .entry-title {
-    background: #F75C70;
+    background: #b80000;
 }
 .ultimite .entry-title {
     h3, .price_logo {
-        background: #DD4B5E;
+        background: #960101;
     }
 } 
-  
+@media screen and (max-width: 700px){
+    .pricelist{
+        padding: 0em;
+    }
+}
