@@ -78,7 +78,12 @@
       text-transform: uppercase;
       text-decoration: none;
       border-radius: 5px;
+      &:hover{
+          background-color: $hover_blue;
+          transition: 0.8s;
+      }
   }
+
 }
 
 .basic .entry-title {

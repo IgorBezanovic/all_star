@@ -41,6 +41,7 @@
         background-color: #cccccc94;
         border-radius: 0.5em;
         padding: 2em;
+        margin: 1em;
         .trainer_img{
             height: 10em;
             border-radius: 50%;
@@ -59,12 +60,14 @@
     padding:  60px 0;
     .about_us_approch_title{
         background-color: $blue;
+        background: radial-gradient($blue, rgb(119, 161, 194));
         width: 100%;
         padding: 20px 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 3em;
+        text-transform: uppercase;
     }
     .about_us_approch{
         display: flex;
@@ -127,6 +130,7 @@
         }
     }
 }
+
 @media screen and (max-width: 700px){
     .about_us{
         margin-top: 4em;

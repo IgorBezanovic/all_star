@@ -25,6 +25,7 @@ footer{
                 }
                 p{
                     margin-top: 0.3em;
+                    transition: 0.5 ease-in;
                     a{
                         color: #ffffff;
                         @include hover;
@@ -63,6 +64,7 @@ footer{
                 text-decoration: none;
                 color: #ffffff;
                 font-size: 1.3em;
+                transition: 0.8s ease-out;
                 @include hover;
             }
         }

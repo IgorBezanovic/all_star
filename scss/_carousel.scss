@@ -17,20 +17,7 @@
         }
     }
 }
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
+
 .content_slide{
     display: flex;
     justify-content: center;
@@ -91,23 +78,38 @@
         color: $white;
         font-size: 1.3em;
     }
-    .btn{
+    .carousel_link{
         margin-top: 2em;
-        padding: 1em;
-        width: 7em;
         background-color: $dark_blue;
+        padding: 1em 2em;
         border-radius: 5px;
-        @include hover;
         font-size: 16px;
+        color: $white;
+        text-decoration: none;
+        transition: 0.8s;
+        animation-name: fadeInUp;
         &:hover{
-            background-color: $hover_btn;
-        }
-        a{
-            text-decoration: none;
-            color: $white;
+            background-color: $hover_blue;
+            transition: 0.8s;
+            cursor: pointer;
         }
     }
 }
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
 @media screen and (max-width: 700px){
     .for_carousel{
         .slideshow-container{

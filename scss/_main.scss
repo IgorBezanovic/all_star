@@ -4,37 +4,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .reserve, .message{   
-        background-color: $blue;
+    .reserve{   
         width: 100%;
         padding: 20px 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 3em;
-        p, h2{
+        background: radial-gradient($blue, rgb(119, 161, 194));
+        h2{
             font-size: 1.2em;
             text-align: center;
             line-height: 1.5em;
             color: $white;
             line-height: 2;
-            a{
+            text-transform: uppercase;
+            .reserve_training{
                 color: #ffffff;
                 text-decoration: none;
+                transition: 0.8s ease-in;
                 &:hover{
                     color: $dark_blue;
                     font-weight: bold;
+                    transition: 0.8s ease-out;
+                    text-decoration: underline;
                 }
             }
-        }
-        strong{
-            background-color: rgb(139, 29, 29);
-            border-radius: 5px;
-            padding: 12px;
-            font-size: 16px;
-            &:hover{
-                background-color: rgb(99, 25, 25);
-                color: $white;
+            .hover_reserve{
+                color: #ffffff;
+                text-decoration: none;
+                background-color: rgb(139, 29, 29);
+                border-radius: 5px;
+                padding: 12px;
+                font-size: 16px;
+                transition: 0.8s ease-in;
+                &:hover{
+                    background-color: #d24200;
+                    color: $white;
+                    transition: 0.8s ease-out;
+                    animation-name: swing;
+                    animation-duration: 3s;
+                }
             }
         }
     }

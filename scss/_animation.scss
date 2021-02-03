@@ -1,0 +1,255 @@
+.swing {
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 2s;
+    animation-name: swing;
+    animation-duration: 2s;
+}
+@keyframes swing {
+    20% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+    }
+  
+    40% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate(5deg);
+      transform: rotate(5deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(2.5deg);
+        transform: rotate(2.5deg); 
+    }
+
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+
+//ulazak iz mesta 
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from { opacity: .4 } 
+    to { opacity: 1 }
+}
+
+//bljeskoviti prikaz
+.flash {
+    -webkit-animation-name: flash;
+    -webkit-animation-duration: 2s;
+    animation-name: flash;
+    animation-duration: 2s;
+}
+@keyframes flash {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+  
+    25%, 75% {
+      opacity: 0;
+    }
+}
+
+//ulazak sa leve strane
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+}
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-30px);
+      -ms-transform: translateX(-30px);
+      transform: translateX(-30px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+}
+
+//ulazak sa desne strane
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+}
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(30px);
+      -ms-transform: translateX(30px);
+      transform: translateX(30px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+}
+
+//ulazak od dole
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+}
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+}
+
+//ulazak od gore
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+      transform: translateY(30px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+}
+//Veliki ulazak sa leve strane
+.fadeInLeftBig {
+    -webkit-animation-name: fadeInLeftBig;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeInLeftBig;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+@keyframes fadeInLeftBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-2000px);
+      -ms-transform: translateX(-2000px);
+      transform: translateX(-2000px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+}
+
+//Veliki ulazak sa desne strane
+.fadeInRightBig {
+    -webkit-animation-name: fadeInRightBig;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeInRightBig;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+@keyframes fadeInRightBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(2000px);
+      -ms-transform: translateX(2000px);
+      transform: translateX(2000px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+}
+
+//Veliki ulazak od dole
+.fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeInDownBig;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+@keyframes fadeInDownBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-2000px);
+      -ms-transform: translateY(-2000px);
+      transform: translateY(-2000px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+}
+
+//Veliki ulazak od gore
+.fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeInUpBig;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInUpBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(2000px);
+      -ms-transform: translateY(2000px);
+      transform: translateY(2000px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+}

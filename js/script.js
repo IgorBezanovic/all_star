@@ -58,12 +58,10 @@ if (width.matches) {
 }
 //FAQ
 let accordionArrow = document.querySelectorAll('.question_accordionArrow');
-let cards = document.querySelectorAll('.question_card');
 let accordionDescription = document.querySelectorAll('.question_description');
-let rightHeight= document.querySelectorAll('.rirhtt');
 let open = [0, 0, 0, 0, 0];
 
-cards.forEach((card, index) => {
+accordionArrow.forEach((card, index) => {
   card.addEventListener('click', () => {
     if (open[index] == 0) {
       accordionDescription[index].style.display = 'block';

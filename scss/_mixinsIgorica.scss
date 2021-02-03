@@ -26,5 +26,6 @@
 @mixin hover{
     &:hover{
         color: $hover_blue;
+        transition: 0.5s ease-in;
     }
 }

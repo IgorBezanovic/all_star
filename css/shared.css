@@ -10,6 +10,241 @@
   font-family: "Roboto", sans-serif;
 }
 
+.swing {
+  -webkit-animation-name: swing;
+  -webkit-animation-duration: 2s;
+  animation-name: swing;
+  animation-duration: 2s;
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  90% {
+    -webkit-transform: rotate(2.5deg);
+    transform: rotate(2.5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.flash {
+  -webkit-animation-name: flash;
+  -webkit-animation-duration: 2s;
+  animation-name: flash;
+  animation-duration: 2s;
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeInRight;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeInLeftBig;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeInRightBig;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    -ms-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeInDownBig;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeInUpBig;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 header .nav_track {
   display: flex;
   justify-content: flex-end;
@@ -35,6 +270,7 @@ header .nav_track .logo {
 header .nav_track .logo img {
   height: 8em;
   transform: scale(1.2);
+  transition: 0.8s ease-in;
 }
 header .nav_track .links {
   text-align: center;
@@ -62,6 +298,7 @@ header .nav_track .links ul li a {
 }
 header .nav_track .links ul li a:hover {
   color: #3b9ada;
+  transition: 0.5s ease-in;
 }
 header .nav_track .burger_menu {
   display: none;
@@ -142,12 +379,14 @@ footer .footer_text .club .txt h3 {
 }
 footer .footer_text .club .txt p {
   margin-top: 0.3em;
+  transition: 0.5 ease-in;
 }
 footer .footer_text .club .txt p a {
   color: #ffffff;
 }
 footer .footer_text .club .txt p a:hover {
   color: #3b9ada;
+  transition: 0.5s ease-in;
 }
 footer .footer_text .club .social {
   display: flex;
@@ -180,9 +419,11 @@ footer .footer_text .club .social .social_bkg img {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.3em;
+  transition: 0.8s ease-out;
 }
 .footer_contact .footer_links li a:hover {
   color: #3b9ada;
+  transition: 0.5s ease-in;
 }
 
 .google_maps {
@@ -300,29 +541,6 @@ footer .footer_text .club .social .social_bkg img {
   height: 45em;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .content_slide {
   display: flex;
   justify-content: center;
@@ -385,25 +603,37 @@ footer .footer_text .club .social .social_bkg img {
   color: #ffffff;
   font-size: 1.3em;
 }
-.description_slide .btn {
+.description_slide .carousel_link {
   margin-top: 2em;
-  padding: 1em;
-  width: 7em;
   background-color: #123044;
+  padding: 1em 2em;
   border-radius: 5px;
   font-size: 16px;
-}
-.description_slide .btn:hover {
-  color: #3b9ada;
-}
-.description_slide .btn:hover {
-  background-color: #051f30;
-}
-.description_slide .btn a {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
+  transition: 0.8s;
+  animation-name: fadeInUp;
+}
+.description_slide .carousel_link:hover {
+  background-color: #3b9ada;
+  transition: 0.8s;
+  cursor: pointer;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 700px) {
   .for_carousel .slideshow-container {
     margin-top: 4em;
@@ -453,13 +683,12 @@ footer .footer_text .club .social .social_bkg img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  transition: 0.4s ease-in;
 }
 .programs .box:hover {
   color: #3b9ada;
-}
-.programs .box:hover {
   transform: scale(1.2);
-  transition: 0.3s ease-out;
+  transition: 0.4s ease-out;
 }
 .programs .box h2 {
   text-align: center;
@@ -468,6 +697,7 @@ footer .footer_text .club .social .social_bkg img {
   border-radius: 1em;
   padding: 1em 0;
   width: 100%;
+  text-transform: uppercase;
 }
 .programs .box p {
   margin-top: 1em;
@@ -538,6 +768,7 @@ footer .footer_text .club .social .social_bkg img {
   background-color: #cccccc94;
   border-radius: 0.5em;
   padding: 2em;
+  margin: 1em;
 }
 .about_us_trainers .trainer .trainer_img {
   height: 10em;
@@ -557,12 +788,14 @@ footer .footer_text .club .social .social_bkg img {
 }
 .about_us_approch_full .about_us_approch_title {
   background-color: #469fda;
+  background: radial-gradient(#469fda, #77a1c2);
   width: 100%;
   padding: 20px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3em;
+  text-transform: uppercase;
 }
 .about_us_approch_full .about_us_approch {
   display: flex;
@@ -677,39 +910,49 @@ footer .footer_text .club .social .social_bkg img {
   justify-content: center;
   align-items: center;
 }
-.we .reserve, .we .message {
-  background-color: #469fda;
+.we .reserve {
   width: 100%;
   padding: 20px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3em;
+  background: radial-gradient(#469fda, #77a1c2);
 }
-.we .reserve p, .we .reserve h2, .we .message p, .we .message h2 {
+.we .reserve h2 {
   font-size: 1.2em;
   text-align: center;
   line-height: 1.5em;
   color: #ffffff;
   line-height: 2;
+  text-transform: uppercase;
 }
-.we .reserve p a, .we .reserve h2 a, .we .message p a, .we .message h2 a {
+.we .reserve h2 .reserve_training {
   color: #ffffff;
   text-decoration: none;
+  transition: 0.8s ease-in;
 }
-.we .reserve p a:hover, .we .reserve h2 a:hover, .we .message p a:hover, .we .message h2 a:hover {
+.we .reserve h2 .reserve_training:hover {
   color: #123044;
   font-weight: bold;
+  transition: 0.8s ease-out;
+  text-decoration: underline;
 }
-.we .reserve strong, .we .message strong {
+.we .reserve h2 .hover_reserve {
+  color: #ffffff;
+  text-decoration: none;
   background-color: #8b1d1d;
   border-radius: 5px;
   padding: 12px;
   font-size: 16px;
+  transition: 0.8s ease-in;
 }
-.we .reserve strong:hover, .we .message strong:hover {
-  background-color: #631919;
+.we .reserve h2 .hover_reserve:hover {
+  background-color: #d24200;
   color: #ffffff;
+  transition: 0.8s ease-out;
+  animation-name: swing;
+  animation-duration: 3s;
 }
 
 @media screen and (max-width: 700px) {
@@ -775,6 +1018,7 @@ footer .footer_text .club .social .social_bkg img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .contacting {
@@ -988,6 +1232,10 @@ footer .footer_text .club .social .social_bkg img {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
+}
+.btn a:hover {
+  background-color: #3b9ada;
+  transition: 0.8s;
 }
 
 .basic .entry-title {
