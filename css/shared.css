@@ -78,6 +78,7 @@
   -webkit-animation-duration: 2s;
   animation-name: fadeInLeft;
   animation-duration: 2s;
+  visibility: visible;
 }
 
 @keyframes fadeInLeft {

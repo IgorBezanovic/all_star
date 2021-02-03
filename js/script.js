@@ -1,4 +1,3 @@
-
 //caroseul
 var slideIndex;
 
