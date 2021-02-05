@@ -714,14 +714,8 @@ footer .footer_text .club .social .social_bkg img {
   .we {
     justify-content: flex-start;
   }
-  .we .programs .box {
-    height: 25em;
-    width: 12em;
-  }
-}
-@media screen and (max-width: 500px) {
-  .we .programs .box {
-    margin: 1.5em 0;
+  .we .programs {
+    padding: 1em;
   }
 }
 .about_us {
@@ -797,6 +791,7 @@ footer .footer_text .club .social .social_bkg img {
   align-items: center;
   margin-bottom: 3em;
   text-transform: uppercase;
+  text-align: center;
 }
 .about_us_approch_full .about_us_approch {
   display: flex;
@@ -1020,6 +1015,7 @@ footer .footer_text .club .social .social_bkg img {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .contacting {
@@ -1030,6 +1026,7 @@ footer .footer_text .club .social .social_bkg img {
 .contacting a {
   text-decoration: none;
   color: #6b6a6a;
+  transition: 0.5s ease-in-out;
 }
 .contacting a:hover {
   text-decoration: underline;
@@ -1037,9 +1034,13 @@ footer .footer_text .club .social .social_bkg img {
   background-color: #123044;
   padding: 0.5em 1em;
   border-radius: 0.3em;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 700px) {
+  .faq {
+    margin-top: 0em;
+  }
   .faq .faq_div {
     flex-direction: column;
     justify-content: center;
@@ -1433,6 +1434,7 @@ footer .footer_text .club .social .social_bkg img {
 .programm_solo .programme_solo_desc {
   margin: 2em 0;
   width: 90%;
+  text-align: justify;
 }
 .programm_solo .programm_solo_links {
   display: flex;
@@ -1453,6 +1455,12 @@ footer .footer_text .club .social .social_bkg img {
   transition: 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 700px) {
+  .programm_solo {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+}
 body {
   background: #ffffff url(../images/New_Logo_White.png) repeat;
   background-position: 10% 100%;

@@ -25,6 +25,7 @@
     .programme_solo_desc{
         margin: 2em 0;
         width: 90%;
+        text-align: justify;
     }
     .programm_solo_links{
         display: flex;
@@ -43,5 +44,12 @@
                 transition: 0.5s ease-in-out;
             }
         }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .programm_solo{
+        margin-top: 4em;
+        margin-bottom: 4em;
     }
 }

@@ -65,23 +65,10 @@
     }
 }
 @media screen and (max-width: 700px){
-.we{
-    justify-content: flex-start;
-    .programs{
-        .box{
-            height: 25em;
-            width: 12em;
-            
+    .we{
+        justify-content: flex-start;
+        .programs{
+            padding: 1em;
         }
     }
-}
-}
-@media screen and (max-width: 500px){
-.we{
-    .programs{
-        .box{
-            margin: 1.5em 0;
-        }
-    }
-}
 }
