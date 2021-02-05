@@ -744,7 +744,7 @@ footer .footer_text .club .social .social_bkg img {
   text-align: center;
 }
 .about_us .about_us_description .about_us_text .about_us_desc_txt {
-  margin-top: 3em;
+  margin-top: 2em;
   text-align: justify;
 }
 .about_us .about_us_description .about_us_image {
@@ -1268,6 +1268,191 @@ footer .footer_text .club .social .social_bkg img {
     padding: 0em;
   }
 }
+.programme_all {
+  margin-top: 12em;
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+.programme_all .programme {
+  background-color: rgba(148, 192, 221, 0.685);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: auto;
+  width: 60em;
+  margin: 2em 0;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.programme_all .programme .programme_full {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  margin-top: 3em;
+}
+.programme_all .programme .programme_full .programe_img {
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+  border: 0.7em;
+  margin-left: 5em;
+}
+.programme_all .programme .programme_full .programe_tittle {
+  text-transform: uppercase;
+  margin-right: 5em;
+  color: #123044;
+}
+.programme_all .programme .programme_desc {
+  height: auto;
+  margin: 2em 5em;
+  text-indent: 30px;
+  text-align: justify;
+}
+.programme_all .programme .programme_solo {
+  margin: 2em 0 2em 5em;
+  align-self: flex-start;
+}
+.programme_all .programme .programme_solo .programme_solo_link {
+  text-decoration: none;
+  background-color: #49acbf;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+.programme_all .programme .programme_solo .programme_solo_link:hover {
+  background-color: #449daf;
+  transition: 0.5s ease-in-out;
+}
+
+.programme:nth-child(even) {
+  align-self: flex-end;
+  border-top-right-radius: 0em;
+  border-bottom-right-radius: 0em;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.programme:nth-child(even) .programme_full {
+  flex-direction: row-reverse;
+}
+.programme:nth-child(even) .programme_full .programe_img {
+  margin-left: 0;
+  margin-right: 5em;
+}
+.programme:nth-child(even) .programme_full .programe_tittle {
+  margin-right: 0;
+  margin-left: 5em;
+}
+
+.programme:nth-child(even) .programme_solo {
+  margin: 2em 5em 2em 0;
+  align-self: flex-end;
+}
+
+.programme:nth-child(2) .programme_solo .programme_solo_link {
+  background-color: #5ba63e;
+}
+.programme:nth-child(2) .programme_solo .programme_solo_link:hover {
+  background-color: #4d8b34;
+  transition: 0.5s ease-in-out;
+}
+
+.programme:nth-child(3) .programme_solo .programme_solo_link {
+  background-color: #d24200;
+}
+.programme:nth-child(3) .programme_solo .programme_solo_link:hover {
+  background-color: #b43a01;
+  transition: 0.5s ease-in-out;
+}
+
+.programme:nth-child(4) .programme_solo .programme_solo_link {
+  background-color: #b80000;
+}
+.programme:nth-child(4) .programme_solo .programme_solo_link:hover {
+  background-color: #960101;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1191px) {
+  .programme_all .programme {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .programme_all .programme .programme_full .programe_img {
+    margin-left: 3em;
+  }
+  .programme_all .programme .programme_full .programe_tittle {
+    margin-right: 3em;
+  }
+
+  .programme:nth-child(even) .programme_full .programe_img {
+    margin-left: 0;
+    margin-right: 3em;
+  }
+  .programme:nth-child(even) .programme_full .programe_tittle {
+    margin-right: 0;
+    margin-left: 3em;
+  }
+}
+.programm_solo {
+  margin-top: 10em;
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.programm_solo .programme_full_solo {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.programm_solo .programme_full_solo .programe_solo_tittle {
+  color: #123044;
+  text-transform: uppercase;
+}
+.programm_solo .programme_full_solo .programe_solo_img {
+  margin-top: 3em;
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+}
+.programm_solo .programme_solo_desc {
+  margin: 2em 0;
+  width: 90%;
+}
+.programm_solo .programm_solo_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.programm_solo .programm_solo_links .programm_solo_link {
+  text-decoration: none;
+  background-color: #49acbf;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+.programm_solo .programm_solo_links .programm_solo_link:hover {
+  background-color: #449daf;
+  transition: 0.5s ease-in-out;
+}
+
 body {
   background: #ffffff url(../images/New_Logo_White.png) repeat;
   background-position: 10% 100%;

@@ -1,0 +1,47 @@
+.programm_solo{
+    margin-top: 10em;
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .programme_full_solo{
+        margin-top: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .programe_solo_tittle{
+            color: $dark_blue;
+            text-transform: uppercase;
+        }
+        .programe_solo_img{
+            margin-top: 3em;
+            height: 10em;
+            width: 10em;
+            border-radius: 50%;
+        }
+    }
+    .programme_solo_desc{
+        margin: 2em 0;
+        width: 90%;
+    }
+    .programm_solo_links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .programm_solo_link{
+            text-decoration: none;
+            background-color: #49acbf;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 10px 30px;
+            color: $white;
+            transition: 0.5s ease-in-out;
+            &:hover{
+                background-color:  #449daf;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+}
