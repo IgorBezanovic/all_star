@@ -14,23 +14,29 @@
         .programe_solo_tittle{
             color: $dark_blue;
             text-transform: uppercase;
+            font-size: 2em;
         }
         .programe_solo_img{
             margin-top: 3em;
-            height: 10em;
-            width: 10em;
-            border-radius: 50%;
+            border-radius: 1em;
+            height: 30em;
+            width: 50em;
+            transition: 0.5s ease-in-out;
         }
     }
     .programme_solo_desc{
         margin: 2em 0;
-        width: 90%;
+        width: 70%;
         text-align: justify;
+        .programme_desc_text{
+            font-size: 1.3em;
+        }
     }
     .programm_solo_links{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 5em;
         .programm_solo_link{
             text-decoration: none;
             background-color: #49acbf;
@@ -46,10 +52,25 @@
         }
     }
 }
-
+@media screen and (max-width: 1200px){
+    .programm_solo{
+        .programme_full_solo{
+            .programe_solo_img{
+                height: 20em;
+                width: 30em;
+            }
+        }
+    }
+}
 @media screen and (max-width: 700px){
     .programm_solo{
         margin-top: 4em;
         margin-bottom: 4em;
+        .programme_full_solo{
+            .programe_solo_img{
+                height: 12em;
+                width: 20em;
+            }
+        }
     }
 }
