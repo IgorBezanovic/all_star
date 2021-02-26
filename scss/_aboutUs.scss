@@ -131,11 +131,10 @@
             }
         }
     }
+    
 }
-
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1200px){
     .about_us{
-        margin-top: 4em;
         .about_us_description{
             align-items: center;
             flex-direction: column;
@@ -152,11 +151,15 @@
     .about_us_trainers{
         align-items: center;
         flex-direction: column;
+        width: 40em;
         .trainer{
             align-items: center;
             flex-direction: column; 
+            .trainer_img{
+                margin-bottom: 2em;
+            }
             .trainer_message{
-                margin-top: 2em;
+                margin-top: 0;
                 margin-left: 0;
                 text-align: center;
             }
@@ -164,6 +167,15 @@
                 margin-top: 5em;
             }
         }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .about_us{
+        margin-top: 4em;
+    }
+    .about_us_trainers{
+        width: 30em;
     }
     .about_us_education{
         .education{

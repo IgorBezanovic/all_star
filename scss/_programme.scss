@@ -25,10 +25,8 @@
             width: 100%;
             margin-top: 3em;
             .programe_img{
-                border-radius: 50%;
-                width: 6em;
-                height: 6em;
-                border: 0.7em;
+                width: 15em;
+                height: 10em;
                 margin-left: 5em;
             }
             .programe_tittle{
@@ -63,6 +61,11 @@
     }
 }
 .programme:nth-child(even){
+    .programme_full{
+        .programe_img{
+            transform: scaleX(-1);
+        }
+    }
     align-self: flex-end;
     border-top-right-radius: 0em;
     border-bottom-right-radius: 0em;

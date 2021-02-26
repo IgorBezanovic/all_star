@@ -868,10 +868,7 @@ footer .footer_text .club .social .social_bkg img {
   width: 100%;
 }
 
-@media screen and (max-width: 700px) {
-  .about_us {
-    margin-top: 4em;
-  }
+@media screen and (max-width: 1200px) {
   .about_us .about_us_description {
     align-items: center;
     flex-direction: column;
@@ -887,18 +884,31 @@ footer .footer_text .club .social .social_bkg img {
   .about_us_trainers {
     align-items: center;
     flex-direction: column;
+    width: 40em;
   }
   .about_us_trainers .trainer {
     align-items: center;
     flex-direction: column;
   }
+  .about_us_trainers .trainer .trainer_img {
+    margin-bottom: 2em;
+  }
   .about_us_trainers .trainer .trainer_message {
-    margin-top: 2em;
+    margin-top: 0;
     margin-left: 0;
     text-align: center;
   }
   .about_us_trainers .trainer:nth-child(2) {
     margin-top: 5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about_us {
+    margin-top: 4em;
+  }
+
+  .about_us_trainers {
+    width: 30em;
   }
 
   .about_us_education .education {
@@ -1340,10 +1350,8 @@ footer .footer_text .club .social .social_bkg img {
   margin-top: 3em;
 }
 .programme_all .programme .programme_full .programe_img {
-  border-radius: 50%;
-  width: 6em;
-  height: 6em;
-  border: 0.7em;
+  width: 15em;
+  height: 10em;
   margin-left: 5em;
 }
 .programme_all .programme .programme_full .programe_tittle {
@@ -1381,6 +1389,9 @@ footer .footer_text .club .social .social_bkg img {
   border-bottom-right-radius: 0em;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
+}
+.programme:nth-child(even) .programme_full .programe_img {
+  transform: scaleX(-1);
 }
 
 .programme:nth-child(even) .programme_full {
