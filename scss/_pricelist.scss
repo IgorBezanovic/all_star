@@ -8,14 +8,21 @@
 .pricelist{
     padding: 8em 0em;
     .price {
+        margin-top: 5em;
+        padding: 5em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         text-align: center;
+        flex-wrap: wrap;
         .plan {
             display: inline-block;
-            margin: 10px 1%;
+            margin: 1em;
         }
     }
 } 
 .plan-inner {
+    height: 30em;
     background: #fff;
     margin: 0 auto;
     min-width: 280px;
@@ -68,22 +75,26 @@
     }
 }
 .btn {
-  padding: 3em 0;
-  text-align: center;
-  a {
-      cursor: pointer;
-      background: $dark_blue;
-      color: $white;
-      padding: 10px 30px;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-radius: 5px;
-      &:hover{
-          background-color: $hover_blue;
-          transition: 0.8s;
-      }
-  }
-
+    position: relative;
+    bottom: -8em;
+    padding: 3em 0;
+    text-align: center;
+    a {
+        cursor: pointer;
+        background: $dark_blue;
+        color: $white;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        &:hover{
+            background-color:#49acbf;
+            transition: 0.8s;
+        } 
+    }
+}
+.plan:nth-child(4) .btn{
+    bottom: -0.5em;
 }
 
 .basic .entry-title {
@@ -94,7 +105,11 @@
         background: #4d8b34;
     }
 }
-  
+.plan:nth-child(2) .btn a:hover{
+    background-color:#5ba63e;
+    transition: 0.8s;
+}  
+
 .standard .entry-title {
     background: #d24200;
 }
@@ -103,7 +118,10 @@
         background: #b43a01;
     }
 }
-      
+.plan:nth-child(3) .btn a:hover{
+    background-color: #d24200;
+    transition: 0.8s;
+}      
   
 .ultimite .entry-title {
     background: #b80000;
@@ -113,6 +131,11 @@
         background: #960101;
     }
 } 
+.plan:nth-child(4) .btn a:hover{
+    background-color: #b80000;
+    transition: 0.8s;
+}  
+
 @media screen and (max-width: 700px){
     .pricelist{
         padding: 0em;

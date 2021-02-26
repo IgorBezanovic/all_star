@@ -601,8 +601,9 @@ footer .footer_text .club .social .social_bkg img {
   flex-direction: column;
 }
 .description_slide .text {
+  text-transform: uppercase;
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .description_slide .carousel_link {
   margin-top: 2em;
@@ -614,11 +615,12 @@ footer .footer_text .club .social .social_bkg img {
   text-decoration: none;
   transition: 0.8s;
   animation-name: fadeInUp;
+  text-transform: uppercase;
 }
 .description_slide .carousel_link:hover {
+  cursor: pointer;
   background-color: #3b9ada;
   transition: 0.8s;
-  cursor: pointer;
 }
 
 @keyframes fadeInUp {
@@ -677,37 +679,47 @@ footer .footer_text .club .social .social_bkg img {
 .programs .box {
   height: 25em;
   width: 20em;
-  border: 1.5px solid #00eeff;
+  border: 2px solid #00eeff;
   border-radius: 10px;
   margin: 1.5em;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   transition: 0.4s ease-in;
 }
 .programs .box:hover {
-  color: #3b9ada;
   transform: scale(1.2);
+  transition: 0.4s ease-out;
+}
+.programs .box:hover h2 {
+  display: none;
+  transition: 0.4s ease-out;
+}
+.programs .box:hover p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.4s ease-out;
 }
 .programs .box h2 {
   text-align: center;
-  margin-top: 2em;
   background-color: #ffffffb0;
   border-radius: 1em;
   padding: 1em 0;
   width: 100%;
   text-transform: uppercase;
+  transition: 0.4s ease-out;
 }
 .programs .box p {
-  margin-top: 1em;
-  text-align: center;
-  width: 12em;
-  background-color: #ffffffb0;
-  border-radius: 1em;
-  padding: 1em 10px;
+  display: none;
+  height: 100%;
   width: 100%;
+  transition: 0.4s ease-out;
+  text-align: center;
+  background-color: #ffffffb0;
+  border-radius: 7px;
+  font-size: 1.2em;
+  padding: 0 0.5em;
 }
 
 @media screen and (max-width: 700px) {
@@ -740,6 +752,7 @@ footer .footer_text .club .social .social_bkg img {
 .about_us .about_us_description .about_us_text .about_us_desc_txt {
   margin-top: 2em;
   text-align: justify;
+  text-indent: 30px;
 }
 .about_us .about_us_description .about_us_image {
   width: 45%;
@@ -1161,14 +1174,21 @@ footer .footer_text .club .social .social_bkg img {
   padding: 8em 0em;
 }
 .pricelist .price {
+  margin-top: 5em;
+  padding: 5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 .pricelist .price .plan {
   display: inline-block;
-  margin: 10px 1%;
+  margin: 1em;
 }
 
 .plan-inner {
+  height: 30em;
   background: #fff;
   margin: 0 auto;
   min-width: 280px;
@@ -1223,6 +1243,8 @@ footer .footer_text .club .social .social_bkg img {
 }
 
 .btn {
+  position: relative;
+  bottom: -8em;
   padding: 3em 0;
   text-align: center;
 }
@@ -1236,8 +1258,12 @@ footer .footer_text .club .social .social_bkg img {
   border-radius: 5px;
 }
 .btn a:hover {
-  background-color: #3b9ada;
+  background-color: #49acbf;
   transition: 0.8s;
+}
+
+.plan:nth-child(4) .btn {
+  bottom: -0.5em;
 }
 
 .basic .entry-title {
@@ -1248,6 +1274,11 @@ footer .footer_text .club .social .social_bkg img {
   background: #4d8b34;
 }
 
+.plan:nth-child(2) .btn a:hover {
+  background-color: #5ba63e;
+  transition: 0.8s;
+}
+
 .standard .entry-title {
   background: #d24200;
 }
@@ -1256,12 +1287,22 @@ footer .footer_text .club .social .social_bkg img {
   background: #b43a01;
 }
 
+.plan:nth-child(3) .btn a:hover {
+  background-color: #d24200;
+  transition: 0.8s;
+}
+
 .ultimite .entry-title {
   background: #b80000;
 }
 
 .ultimite .entry-title h3, .ultimite .entry-title .price_logo {
   background: #960101;
+}
+
+.plan:nth-child(4) .btn a:hover {
+  background-color: #b80000;
+  transition: 0.8s;
 }
 
 @media screen and (max-width: 700px) {
