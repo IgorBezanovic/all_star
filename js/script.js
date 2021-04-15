@@ -77,3 +77,12 @@ accordionArrow.forEach((card, index) => {
     }
   });
 });
+
+//  typewriter
+let app = document.getElementById('typeEffect');
+let typewriter = new Typewriter(app, {
+    loop: true
+})
+typewriter.typeString('Promo period')
+    .pauseFor(2500)
+    .start()

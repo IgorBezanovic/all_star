@@ -1,3 +1,37 @@
+.promo{
+    width: 80%;
+    margin: 8em auto 0 auto;
+    border-radius: 1em;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .typeEffect{
+        color: red;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .board{ 
+        background-image: url(../images/board.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10em;
+        width: 30em;
+        border-radius: 2em;
+        .back_board{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.466);
+            height: 100%;
+            font-size: 1.2em;
+        }
+    }
+}
+
+
 .pricelist_txt{
     padding: 8em 3em 3em 3em;
     .pricelist_txt_h1{
@@ -93,8 +127,8 @@
         } 
     }
 }
-.plan:nth-child(4) .btn{
-    bottom: -0.5em;
+.plan:nth-child(2) .btn{
+    bottom: -0.6em;
 }
 
 .basic .entry-title {
