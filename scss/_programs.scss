@@ -79,6 +79,10 @@
         justify-content: flex-start;
         .programs{
             padding: 1em;
+            .box{
+                height: 20em;
+                width: 15em;
+            }
         }
     }
 }

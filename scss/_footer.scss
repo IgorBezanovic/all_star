@@ -74,7 +74,7 @@ footer{
     background-color: $white;
     .left_footer{
         padding-left: 40px;
-        width: 13em;
+        width: 40%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -85,6 +85,7 @@ footer{
         justify-content: space-between;
         align-items: center;
         color: $dark_blue;
+        width: 60%;
         p{
             a{
                 text-decoration: none;
@@ -118,5 +119,13 @@ footer{
     .google_maps{
         margin-top: 5em;
         justify-content: center;
+    }
+    .copyright{
+        .left_footer{
+            padding-left: 5px;
+        }
+        .right_footer{
+            padding-right: 5px;
+        }
     }
 }

@@ -431,7 +431,7 @@ footer .footer_text .club .social .social_bkg img {
 }
 .copyright .left_footer {
   padding-left: 40px;
-  width: 13em;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -442,6 +442,7 @@ footer .footer_text .club .social .social_bkg img {
   justify-content: space-between;
   align-items: center;
   color: #123044;
+  width: 60%;
 }
 .copyright .right_footer p a {
   text-decoration: none;
@@ -474,6 +475,13 @@ footer .footer_text .club .social .social_bkg img {
   .google_maps {
     margin-top: 5em;
     justify-content: center;
+  }
+
+  .copyright .left_footer {
+    padding-left: 5px;
+  }
+  .copyright .right_footer {
+    padding-right: 5px;
   }
 }
 .for_carousel {
@@ -682,6 +690,10 @@ footer .footer_text .club .social .social_bkg img {
   }
   .we .programs {
     padding: 1em;
+  }
+  .we .programs .box {
+    height: 20em;
+    width: 15em;
   }
 }
 .about_us {
