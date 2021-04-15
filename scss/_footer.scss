@@ -36,7 +36,7 @@ footer{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                width: 10em;
+                width: 50%;
                 margin-top: 1.5em;
                 .social_bkg{
                     background-color: $blue;
@@ -54,26 +54,13 @@ footer{
         }
     }
 }
-.footer_contact{
-    .footer_links{
-        margin-top: 2em;
-        li{
-            list-style: none;
-            margin-top: 0.5em;
-            a{
-                text-decoration: none;
-                color: #ffffff;
-                font-size: 1.3em;
-                transition: 0.8s ease-out;
-                @include hover;
-            }
-        }
-    }
-}
 .google_maps{
+    width: 50%;
     height: 300px;
+    display: flex;
+    justify-content: flex-end;
     iframe{
-        border-radius: 1em;
+        border-radius: 10px;
     }
 }
 .copyright{
@@ -106,65 +93,30 @@ footer{
         }
     }
 }
-@media screen and (max-width: 1191px){
-    footer{
-        height: 54em;
-        .footer_text{
-            flex-direction: column;
-            justify-content: center;
-            align-items: space-between;
-            margin-top: 3em;
-            padding: 40px;
-            .footer_contact{
-                position: relative;
-                top: -18em;
-                display: flex;
-                flex-direction: column;
-                align-self: flex-end;
-                .footer_links{
-                    text-align: right;
-                    margin-top: 0;
-                    
-                }
-            }
-            .google_maps{
-                position: relative;
-                top: -6em;
-                width: 100%;
-                iframe{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
 @media screen and (max-width: 700px){
     footer{
+        height: 52em;
         .footer_text{
-            margin-top: -1em;
+            flex-direction: column;
             align-items: center;
-                justify-content: center;
+            justify-content: center;
             .club{
-                position: static;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                .All_Star{
-                    margin-left: 1.5em;
-                }
                 .txt{
                     text-align: center;
+                    margin-left: 0;
                 }
             }
             .footer_links{
                 display: none;
             }
-            .google_maps{
-                position: static;
-                margin-top: 2em;
-                width: 15em;
-            }
         }
+    }
+    .google_maps{
+        margin-top: 5em;
+        justify-content: center;
     }
 }
