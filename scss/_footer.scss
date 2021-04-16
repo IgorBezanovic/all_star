@@ -27,6 +27,12 @@ footer{
                 p{
                     margin-top: 0.3em;
                     transition: 0.5 ease-in;
+                    i{
+                        margin-right: 10px;
+                    }
+                    .fa-phone-volume{
+                        margin-right: 15px;
+                    }
                     a{
                         color: #ffffff;
                         @include hover;

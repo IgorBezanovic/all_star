@@ -383,6 +383,12 @@ footer .footer_text .club .txt p {
   margin-top: 0.3em;
   transition: 0.5 ease-in;
 }
+footer .footer_text .club .txt p i {
+  margin-right: 10px;
+}
+footer .footer_text .club .txt p .fa-phone-volume {
+  margin-right: 15px;
+}
 footer .footer_text .club .txt p a {
   color: #ffffff;
 }
@@ -916,7 +922,7 @@ footer .footer_text .club .social .social_bkg img {
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 50vh;
+    height: 80vh;
   }
   .about_us_approch_full .container .panel {
     height: 40vh;
@@ -1103,7 +1109,7 @@ footer .footer_text .club .social .social_bkg img {
 }
 
 .contact_form {
-  background-color: rgba(77, 146, 224, 0.596);
+  background-color: #808080;
 }
 .contact_form form {
   display: flex;
@@ -1129,7 +1135,7 @@ footer .footer_text .club .social .social_bkg img {
   padding: 5px;
 }
 .contact_form form .submit_btn {
-  background-color: rgba(77, 118, 255, 0.541);
+  background-color: #ff7300;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -1568,6 +1574,9 @@ footer .footer_text .club .social .social_bkg img {
   .programm_solo {
     margin-top: 4em;
     margin-bottom: 4em;
+  }
+  .programm_solo .programme_solo_desc {
+    width: 90vw;
   }
   .programm_solo .programme_full_solo .programe_solo_img {
     height: 12em;
