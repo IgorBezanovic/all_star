@@ -1,4 +1,5 @@
 footer{
+    width: 100vw;
     height: 30em;
     padding: 0 60px;
     position: relative;
@@ -76,13 +77,13 @@ footer{
         padding-left: 40px;
         width: 40%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
     }
     .right_footer{
         padding-right: 40px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         color: $dark_blue;
         width: 60%;

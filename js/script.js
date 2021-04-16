@@ -78,11 +78,18 @@ accordionArrow.forEach((card, index) => {
   });
 });
 
-//  typewriter
-let app = document.getElementById('typeEffect');
-let typewriter = new Typewriter(app, {
-    loop: true
+const panels = document.querySelectorAll('.panel');
+console.log('caca')
+panels.forEach((panel)=> {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+        console.log('kliked')
+    })
 })
-typewriter.typeString('Promo period')
-    .pauseFor(2500)
-    .start()
+
+function removeActiveClasses() {
+    panels.forEach((panel) => {
+        panel.classList.remove('active')
+    })
+}

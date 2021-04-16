@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     .reserve{   
         width: 100%;
         padding: 20px 5px;
@@ -49,10 +50,53 @@
         }
     }
 }   
+@media screen and (max-width: 1024px){
+    .we{
+        margin-top: -2.4em;
+    }
+}
+@media screen and (max-width: 1000px){
+    .we{
+        margin-top: -3em;
+    }
+}
+@media screen and (max-width: 900px){
+    .we{
+        margin-top: -6em;
+    }
+}
+@media screen and (max-width: 768px){
+    .we{
+        margin-top: -13em;
+    }
+}
 @media screen and (max-width: 700px){
     .we{
-        .reserve{
-            margin-top: 5em; 
-        }
+        margin-top: -15em;
+    }
+}
+@media screen and (max-width: 600px){
+    .we{
+        margin-top: -18em;
+    }
+}
+@media screen and (max-width: 500px){
+    .we{
+        margin-top: -20em;
+    }
+}
+@media screen and (max-width: 414px){
+    .we{
+        margin-top: -27.8em;
+    }
+}
+@media screen and (max-width: 375px){
+    .we{
+        margin-top: -29.5em;
+    }
+}
+@media screen and (max-width: 320px){
+    .we{
+        margin-top: -31.7em;
     }
 }

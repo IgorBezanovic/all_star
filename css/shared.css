@@ -350,6 +350,7 @@ header .nav_track .burger_menu {
   }
 }
 footer {
+  width: 100vw;
   height: 30em;
   padding: 0 60px;
   position: relative;
@@ -433,13 +434,13 @@ footer .footer_text .club .social .social_bkg img {
   padding-left: 40px;
   width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .copyright .right_footer {
   padding-right: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   color: #123044;
   width: 60%;
@@ -500,8 +501,9 @@ footer .footer_text .club .social .social_bkg img {
 }
 .for_carousel .slideshow-container .mySlides .imgs {
   vertical-align: middle;
-  width: 100%;
-  height: 45em;
+  width: 100vw;
+  max-height: 45em;
+  height: 100%;
 }
 
 .content_slide {
@@ -603,8 +605,42 @@ footer .footer_text .club .social .social_bkg img {
   .for_carousel .slideshow-container {
     margin-top: 4em;
   }
-  .for_carousel .slideshow-container .mySlides .imgs {
-    height: 50em;
+
+  .description_slide {
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .description_slide .text {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1em;
+  }
+  .description_slide .carousel_link {
+    margin-top: 2em;
+    background-color: #123044;
+    padding: 0.8em 0.8em;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.8s;
+    animation-name: fadeInUp;
+    text-transform: uppercase;
+  }
+  .description_slide .carousel_link:hover {
+    cursor: pointer;
+    background-color: #3b9ada;
+    transition: 0.8s;
+  }
+
+  .content_slide .dots {
+    display: none;
   }
 }
 .programs {
@@ -702,6 +738,7 @@ footer .footer_text .club .social .social_bkg img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
 }
 .about_us .about_us_description {
   padding: 60px;
@@ -772,43 +809,42 @@ footer .footer_text .club .social .social_bkg img {
   text-transform: uppercase;
   text-align: center;
 }
-.about_us_approch_full .about_us_approch {
+.about_us_approch_full .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 50vw;
 }
-.about_us_approch_full .about_us_approch .about_us_approch_method {
-  width: 18em;
-  height: 23em;
-  border-radius: 0.5em;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 1em;
+.about_us_approch_full .container .panel {
+  height: 50vh;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 15px;
+  position: relative;
+  transition: flex 0.7s ease-in;
 }
-.about_us_approch_full .about_us_approch .about_us_approch_method .about_us_approch_name {
-  margin: 1.5em 0;
-  height: 4em;
-  text-align: center;
-  color: #123044;
+.about_us_approch_full .container .panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
 }
-.about_us_approch_full .about_us_approch .about_us_approch_method .about_us_approch_desc {
-  text-align: center;
-  width: 14em;
+.about_us_approch_full .container .panel p {
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
 }
-.about_us_approch_full .about_us_approch .st {
-  background-color: rgba(189, 208, 221, 0.685);
+.about_us_approch_full .container .panel.active {
+  flex: 3;
 }
-.about_us_approch_full .about_us_approch .nd {
-  background-color: rgba(148, 192, 221, 0.685);
-}
-.about_us_approch_full .about_us_approch .rd {
-  background-color: rgba(109, 172, 214, 0.685);
-}
-.about_us_approch_full .about_us_approch .th {
-  background-color: rgba(59, 151, 212, 0.685);
+.about_us_approch_full .container .panel.active h3, .about_us_approch_full .container .panel.active p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 .about_us_education {
@@ -869,14 +905,43 @@ footer .footer_text .club .social .social_bkg img {
   }
 }
 @media screen and (max-width: 700px) {
+  .about_us_approch_full {
+    padding: 5px 0;
+    margin-bottom: 3em;
+  }
+  .about_us_approch_full .about_us_approch_title {
+    font-size: 1.2em;
+  }
+  .about_us_approch_full .container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 50vh;
+  }
+  .about_us_approch_full .container .panel {
+    height: 40vh;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 1em 0;
+    position: relative;
+    transition: flex 0.7s ease-in;
+  }
+
   .about_us {
     margin-top: 4em;
   }
 
   .about_us_trainers {
     width: 30em;
+    padding: 10px;
   }
 
+  .about_us_education {
+    padding: 10px;
+  }
   .about_us_education .education {
     flex-direction: column;
     justify-content: center;
@@ -888,12 +953,19 @@ footer .footer_text .club .social .social_bkg img {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 500px) {
+  .about_us_trainers {
+    width: 280px;
+    padding: 10px;
+  }
+}
 .we {
   padding: 0 0 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 .we .reserve {
   width: 100%;
@@ -940,9 +1012,54 @@ footer .footer_text .club .social .social_bkg img {
   animation-duration: 3s;
 }
 
+@media screen and (max-width: 1024px) {
+  .we {
+    margin-top: -2.4em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .we {
+    margin-top: -3em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .we {
+    margin-top: -6em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .we {
+    margin-top: -13em;
+  }
+}
 @media screen and (max-width: 700px) {
-  .we .reserve {
-    margin-top: 5em;
+  .we {
+    margin-top: -15em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .we {
+    margin-top: -18em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .we {
+    margin-top: -20em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .we {
+    margin-top: -27.8em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .we {
+    margin-top: -29.5em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .we {
+    margin-top: -31.7em;
   }
 }
 .contact {
@@ -1346,20 +1463,44 @@ footer .footer_text .club .social .social_bkg img {
   }
 }
 @media screen and (max-width: 700px) {
+  .programme_all .programme {
+    padding: 25px 0;
+  }
+  .programme_all .programme .programme_full {
+    display: flex;
+    justify-content: center;
+  }
   .programme_all .programme .programme_full .programe_img {
-    margin-left: 3em;
+    display: none;
   }
   .programme_all .programme .programme_full .programe_tittle {
-    margin-right: 3em;
+    margin-right: 0;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .programme_all .programme .programme_desc {
+    margin: 2em 20px;
+  }
+  .programme_all .programme .programme_solo {
+    margin-bottom: 2em;
+  }
+  .programme_all .programme .programme_solo .programme_solo_link {
+    padding: 10px 10px;
+    font-size: 0.9em;
   }
 
   .programme:nth-child(even) .programme_full .programe_img {
     margin-left: 0;
-    margin-right: 3em;
+    margin-right: 0;
   }
   .programme:nth-child(even) .programme_full .programe_tittle {
     margin-right: 0;
-    margin-left: 3em;
+    margin-left: 0;
+  }
+
+  .programme:nth-child(even) .programme_solo {
+    margin: 0 0 0 0;
+    align-self: center;
   }
 }
 .programm_solo {
